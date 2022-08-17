@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.home{
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+    position:absolute;
+    top:0; 
+    right:0;
+    left:0;
+    z-index: -1;
+    color:white;
+}
+
+.overlay{
+    position: absolute;
+    top:30%;
+}
