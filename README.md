@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/juniorthx3/space-tourism-multi-page-website](https://github.com/juniorthx3/space-tourism-multi-page-website)
+- Live Site URL: [https://space-tourism-multi-page.netlify.app/](https://space-tourism-multi-page.netlify.app/)
 
 ## My process
 
