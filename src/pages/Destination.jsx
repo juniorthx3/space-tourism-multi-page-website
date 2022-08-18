@@ -1,7 +1,9 @@
 
 const Destination = () => {
   return (
-    <div>Destination</div>
+    <section className="destination">
+      
+    </section>
   )
 }
 

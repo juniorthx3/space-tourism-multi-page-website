@@ -1,7 +1,9 @@
 
 const Technology = () => {
   return (
-    <div>Technology</div>
+    <section className="technology">
+
+    </section>
   )
 }
 

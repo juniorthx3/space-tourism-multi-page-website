@@ -21,7 +21,47 @@ body{
     color:white;
 }
 
+.destination{
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+    position:absolute;
+    top:0; 
+    right:0;
+    left:0;
+    z-index: -1;
+    color:white;
+}
+
+.crew{
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+    position:absolute;
+    top:0; 
+    right:0;
+    left:0;
+    z-index: -1;
+    color:white;
+}
+
+.technology{
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+    position:absolute;
+    top:0; 
+    right:0;
+    left:0;
+    z-index: -1;
+    color:white;
+}
+
 .overlay{
     position: absolute;
     top:30%;
 }
+
