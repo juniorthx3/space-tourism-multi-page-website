@@ -5,11 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.menu-links{
-    @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest 
-}
-
-
 body{
     @apply m-0 p-0 box-border;
     font-size:16px;
@@ -32,20 +27,8 @@ header{
 
 /* DESKTOP BACKGROUND */
 
-.home{
-    background-image: url("./assets/home/background-home-desktop.jpg");
-}
-
-.destination{
-    background-image: url("./assets/destination/background-destination-desktop.jpg");
-}
-
-.crew{
-    background-image: url("./assets/crew/background-crew-desktop.jpg");
-}
-
 .technology{
-    background-image: url("./assets/technology/background-technology-desktop.jpg");
+   @apply bg-technologyDesktop;
 }
 
 /* TABLET BACKGROUND */
@@ -54,46 +37,17 @@ header{
     .bg-header{
         background:none;
     }
-
-    .home{
-        background-image: url("./assets/home/background-home-tablet.jpg");
-    }
-    
-    .destination{
-        background-image: url("./assets/destination/background-destination-tablet.jpg");
-    }
-    
-    .crew{
-        background-image: url("./assets/crew/background-crew-tablet.jpg");
-    }
-    
-    .technology{
-        background-image: url("./assets/technology/background-technology-tablet.jpg");
-    }
 }
-
 
 /* MOBILE BACKGROUND */
 @media screen and (max-width: 480px) {
     .bg-header{
         background:none;
     }
+}
 
-    .home{
-        background-image: url("./assets/home/background-home-mobile.jpg");
-    }
-    
-    .destination{
-        background-image: url("./assets/destination/background-destination-mobile.jpg");
-    }
-    
-    .crew{
-        background-image: url("./assets/crew/background-crew-mobile.jpg");
-    }
-    
-    .technology{
-        background-image: url("./assets/technology/background-technology-mobile.jpg");
-    }
+.menu-links{
+    @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest 
 }
 
 

@@ -1,7 +1,7 @@
 
 const Destination = () => {
   return (
-    <section className="destination">
+    <section className="destination bg-destinationMobile md:bg-destinationTablet lg:bg-destinationDesktop">
       
     </section>
   )

@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 
 const Home = () => {
   return (
-    <section className="home">
+    <section className="home bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop">
        <div className="h-full flex flex-col items-center justify-center md:flex-row md:justify-evenly" style={{width:"min(100% - 4rem, 80em)", marginInline:"auto"}}>
           <div className="mt-28 flex flex-col items-center justify-evenly md:flex-row md:mx-20">
               <div className='mx-auto text-center md:text-left'>
