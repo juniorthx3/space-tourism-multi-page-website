@@ -1,25 +1,25 @@
 import {Link} from 'react-router-dom'
 
-const NavLink = () => {
+const NavLink = ({route}) => {
   return (
     <>
         <li>
-            <Link to="/" className='hover:border-b-4 hover:border-b-solid pb-6'>
+            <Link to="/" className={route === "" ? 'menu-links border-b-2 border-b-solid' : 'menu-links'}>
                 <span className='font-bold pr-1'>00</span> Home
             </Link>
         </li>
         <li>
-            <Link to="/destination" className='hover:border-b-4 hover:border-b-solid pb-6'>
+            <Link to="/destination" className={route === "destination" ? 'menu-links border-b-2 border-b-solid' : 'menu-links'}>
                 <span className='font-bold pr-1'>01</span> Destination
             </Link>
         </li>
         <li>
-            <Link to="/crew" className='hover:border-b-4 hover:border-b-solid pb-6'>
+            <Link to="/crew" className={route === "crew" ? 'menu-links border-b-2 border-b-solid' : 'menu-links'}>
                 <span className='font-bold pr-1'>02</span> Crew
         </Link>
         </li>
         <li>
-            <Link to="/technology" className='hover:border-b-4 hover:border-b-solid pb-6'>
+            <Link to="/technology" className={route === "technology" ? 'menu-links border-b-2 border-b-solid' : 'menu-links'}>
                 <span className='font-bold pr-1'>03</span> Technology
             </Link>
         </li>

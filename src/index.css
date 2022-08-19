@@ -5,34 +5,28 @@
 @tailwind components;
 @tailwind utilities;
 
+.menu-links{
+    @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest 
+}
+
+
 body{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+    @apply m-0 p-0 box-border;
     font-size:16px;
 }
 
 header{
+    @apply z-0;
     font-size: calc(10px + 2vmin);
-    z-index: 0;
 }
 
 .bg-header{
     background:linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.233));
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); 
 }
 
 .home, .destination, .crew, .technology{
-    background-size: cover;
-    background-attachment: fixed;
-    transition:0.3s;
-    height:100%;
-    position:absolute;
-    top:0; 
-    right:0;
-    left:0;
-    z-index: -1;
-    color:white;
+    @apply bg-cover bg-fixed h-full absolute top-0 right-0 left-0 -z-10 text-white;
 }
 
 
@@ -101,4 +95,5 @@ header{
         background-image: url("./assets/technology/background-technology-mobile.jpg");
     }
 }
+
 

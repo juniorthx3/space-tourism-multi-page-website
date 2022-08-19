@@ -9,7 +9,7 @@ const Home = () => {
                   <h2 className='uppercase font-barlowCondensed not-italic font-normal text-2xl tracking-widest leading-8 text-specialBlue'>
                     So, you want to travel to
                   </h2>
-                  <h4 className='font-bellefair not-italic font-normal uppercase  text-9xl tracking-wider' 
+                  <h4 className='text-8xl font-bellefair not-italic font-normal uppercase  md:text-9xl tracking-wider' 
                       style={{lineHeight:'172px'}}
                   >
                         Space
