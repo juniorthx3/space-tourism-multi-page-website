@@ -15,7 +15,7 @@ const Home = () => {
                   </p>
               </div>
               <div className='mt-20 md:w-1/2'>
-                <Link to="/destination"><button className='bg-white text-black tracking-widest text-lg font-medium uppercase rounded-full w-44 h-44'>Explore</button></Link>
+                <Link to="/destination"><button className='bg-white text-black tracking-widest text-lg font-medium uppercase rounded-full w-44 h-44 hover:animate-pulse'>Explore</button></Link>
               </div>
           </div>
        </div>
