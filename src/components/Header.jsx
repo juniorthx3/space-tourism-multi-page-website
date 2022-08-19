@@ -9,7 +9,7 @@ const Header = () => {
     const [open, setOpen] = useState(false)
   return (
     <header className='bg-header relative mt-7 text-white' >
-        <nav className='flex items-center justify-between py-3 pl-10 pr-32'>
+        <nav className='flex items-center justify-between py-3 pl-10 md:pr-32 lg:pr-64'>
             <div>
                 <Link to="/"><img src={logo} alt="" /></Link>
             </div>
