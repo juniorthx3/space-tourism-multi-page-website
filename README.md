@@ -25,7 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop View 
+![Desktop View](screenshot-desktop-view.png)
+
+#### Mobile View 
+![Mobile View](screenshot-mobile-view.png)
 
 ### Links
 
