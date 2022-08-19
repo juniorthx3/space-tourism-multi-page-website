@@ -14,7 +14,7 @@ const Header = () => {
                 <Link to="/"><img src={logo} alt="" /></Link>
                 <hr className='absolute '/>
             </div>
-            <div className='hidden bg-nav md:flex md:items-center '>
+            <div className='hidden md:flex md:items-center '>
                 <ul className='space-x-12 flex uppercase text-sm'>
                    <NavLink />
                 </ul>
