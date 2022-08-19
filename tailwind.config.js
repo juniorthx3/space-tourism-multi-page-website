@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily:{
+      'bellefair':'Bellefair',
+      'barlowCondensed':'Barlow Condensed',
+      'barlow':'Barlow'
+    },
     screens:{
       xs: '375px',
       sm: '480px',
@@ -11,7 +16,11 @@ module.exports = {
       lg: '976px',
       xl: '1440px'
     },
-    extend: {},
+    extend: {
+      colors:{
+        specialBlue:"#D0D6F9"
+      }
+    },
   },
   plugins: [],
 }
