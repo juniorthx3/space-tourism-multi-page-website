@@ -41,7 +41,7 @@ Users should be able to:
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
-- [TailwindCSS](https://tailwindcss.com/) - CSS frameworkk
+- [TailwindCSS](https://tailwindcss.com/) - CSS framework
 
 ## Author
 
