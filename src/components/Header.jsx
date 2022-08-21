@@ -15,7 +15,6 @@ const Header = () => {
         <nav className='flex items-center justify-between py-3 pl-10 md:pr-32 lg:pr-64'>
             <div>
                 <Link to="/"><img src={logo} alt="" /></Link>
-               { console.log(route)}
             </div>
             <hr className='hidden xl:block absolute left-56 bg-white opacity-25 ' style={{width:'473px', height:'1px'}}/>
             <div className='hidden md:flex md:items-center'>
@@ -28,19 +27,13 @@ const Header = () => {
             </button>
             {
                 open && (
-                    <div className="md:hidden">
-                        <div className='h-screen fixed -top-7 right-0 text-sm px-5 py-8 space-y-6 w-8/12 ' 
-                             style={{backgroundColor:"rgba(255, 255, 255, 0.5)", backdropFilter:"blur(81.5485px)"}}
-                        >
-                        <button onClick={()=>setOpen(!open)} 
-                                className="absolute right-7 top-14 focus:outline-none md:hidden"
-                        >
+                    <div className="blur-bg-mobile h-screen fixed -top-7 right-0 text-sm px-5 py-8 space-y-6 w-8/12 md:hidden">
+                        <button onClick={()=>setOpen(!open)} className="absolute right-7 top-14 focus:outline-none md:hidden">
                             {open ? <img src={iconClose} alt="" /> : <img src={iconHamburger} alt="" />}
                         </button> 
                         <ul className='uppercase text-sm absolute top-28  space-y-10'>
                                 <NavLink route={route} />
                             </ul>
-                        </div>
                     </div>
                 )
             }

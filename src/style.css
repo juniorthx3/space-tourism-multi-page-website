@@ -25,12 +25,23 @@ header{
     @apply bg-cover bg-fixed h-full absolute top-0 right-0 left-0 -z-10 text-white;
 }
 
-
-/* DESKTOP BACKGROUND */
-
-.technology{
-   @apply bg-technologyDesktop;
+.menu-links{
+    @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest 
 }
+
+.blur-bg-mobile{
+    background: rgb(0, 0, 0);
+}
+
+@supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))){
+    .blur-bg-mobile{
+        background: rgba(255, 255, 255, 0.3);
+        -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter:blur(1rem);  
+    }
+}
+
+
 
 /* TABLET BACKGROUND */
 
@@ -47,8 +58,5 @@ header{
     }
 }
 
-.menu-links{
-    @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest 
-}
 
 
