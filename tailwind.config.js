@@ -32,7 +32,7 @@ module.exports = {
         "crewMobile":"url('../src/assets/crew/background-crew-mobile.jpg')",
         "technologyDesktop":"url('../src/assets/technology/background-technology-desktop.jpg')",
         "technologyTablet":"url('../src/assets/technology/background-technology-tablet.jpg')",
-        "technologyMobile":"url('../src/assets/technology/background-technology-mobile.jpg')",
+        "technologyMobile":"url('../src/assets/technology/background-technology-mobile.jpg')"
       }
     },
   },
