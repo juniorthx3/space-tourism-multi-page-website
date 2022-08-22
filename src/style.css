@@ -7,53 +7,75 @@
 @tailwind utilities;
 
 body{
-    @apply m-0 p-0 box-border;
-    font-size:16px;
+    @apply m-0 p-0 box-border text-defaultSize;
 }
 
 header{
-    @apply z-0;
-    font-size: calc(10px + 2vmin);
-}
-
-.bg-header{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.233));
-    backdrop-filter: blur(5px); 
+    @apply z-0 text-headerSize;
 }
 
 .home, .destination, .crew, .technology{
-    @apply h-screen bg-cover bg-fixed absolute top-0 right-0 left-0 -z-10 text-white md:h-full;
+    @apply bg-cover bg-fixed absolute top-0 right-0 left-0 -z-10 text-white;
 }
 
+
+/* PAGE HOME */
+.homeBackground{
+    @apply bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop;
+}
+
+.home{
+    @apply h-screen md:h-full;
+}
+
+.home .containerHome{
+    @apply h-full flex flex-col items-center justify-center md:flex-row md:justify-evenly w-customWidth m-auto;
+}
+
+.home .containerHome .hero{
+    @apply mt-28 flex flex-col items-center justify-evenly md:flex-row md:mx-20;
+}
+
+.home .containerHome .hero .heading-2{
+    @apply uppercase font-barlowCondensed not-italic font-normal text-2xl tracking-widest leading-8 text-specialBlue;
+}
+
+.home .containerHome .hero .heading-1{
+    @apply text-8xl font-bellefair not-italic font-normal uppercase  md:text-9xl tracking-wider;
+}
+
+.home .containerHome .hero .text{
+    @apply font-barlow not-italic font-normal text-sm text-specialBlue tracking-wider leading-6 text-center md:w-11/12 md:text-justify lg:w-1/2;
+}
+
+.btn{
+    @apply bg-white w-44 h-44 font-bellefair text-black tracking-widest text-lg font-medium uppercase rounded-full hover:animate-pulse;
+}
+
+/* PAGE DESTINATION */
+.destination{
+    @apply h-auto md:h-full
+}
+
+/* PAGE CREW AND TECHNOLOGY */
+.crew, .technology{
+    @apply h-screen md:h-full;
+}
+
+/* MENU LINKS */
 .menu-links{
     @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest;
 }
 
-.blur-bg-mobile{
-    background: rgba(0, 0, 0, 0.9);
+.menu-links-hover{
+    @apply border-b-2 border-solid
 }
 
-@supports ((-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem))){
-    .blur-bg-mobile{
-        background: rgba(255, 255, 255, 0.3);
-        -webkit-backdrop-filter: blur(1rem);
-        backdrop-filter:blur(1rem); 
-    }
-}
 
-/* TABLET BACKGROUND */
-@media screen and (max-width: 768px) {
-    .bg-header{
-        background:none;
-    }
-}
 
-/* MOBILE BACKGROUND */
-@media screen and (max-width: 480px) {
-    .bg-header{
-        background:none;
-    }
-}
+
+
+
 
 
 

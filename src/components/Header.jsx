@@ -11,7 +11,7 @@ const Header = () => {
     const route = location.split("/")[1]
     
   return (
-    <header className='bg-header relative mt-7 text-white' >
+    <header className='bg-none relative mt-7 text-white lg:bg-bgHeader lg:backdrop-blur-new'>
         <nav className='flex items-center justify-between py-3 pl-10 md:pr-32 lg:pr-64'>
             <div>
                 <Link to="/"><img src={logo} alt="" /></Link>
@@ -27,11 +27,11 @@ const Header = () => {
             </button>
             {
                 open && (
-                    <div className="blur-bg-mobile h-screen fixed -top-7 right-0 text-sm px-5 py-8 space-y-6 w-8/12 md:hidden">
+                    <div className="bg-bgMobile backdrop-blur-xl h-screen fixed top-0 right-0 text-sm px-5 py-8 space-y-6 w-8/12 md:hidden">
                         <button onClick={()=>setOpen(!open)} className="absolute right-7 top-14 focus:outline-none md:hidden">
                             {open ? <img src={iconClose} alt="" /> : <img src={iconHamburger} alt="" />}
                         </button> 
-                        <ul className='uppercase text-sm absolute top-28  space-y-10'>
+                        <ul className='uppercase text-sm absolute top-28 space-x-10 space-y-10'>
                                 <NavLink route={route} />
                             </ul>
                     </div>

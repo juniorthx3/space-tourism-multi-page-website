@@ -20,6 +20,10 @@ module.exports = {
       colors:{
         specialBlue:"#D0D6F9"
       },
+      fontSize:{
+        defaultSize:"16px",
+        headerSize:"calc(10px + 2vmin)"
+      },
       backgroundImage:{
         'homeDesktop':"url('../src/assets/home/background-home-desktop.jpg')",
         "homeTablet":"url('../src/assets/home/background-home-tablet.jpg')",
@@ -32,8 +36,16 @@ module.exports = {
         "crewMobile":"url('../src/assets/crew/background-crew-mobile.jpg')",
         "technologyDesktop":"url('../src/assets/technology/background-technology-desktop.jpg')",
         "technologyTablet":"url('../src/assets/technology/background-technology-tablet.jpg')",
-        "technologyMobile":"url('../src/assets/technology/background-technology-mobile.jpg')"
-      }
+        "technologyMobile":"url('../src/assets/technology/background-technology-mobile.jpg')",
+        "bgHeader":"linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.233))",
+        "bgMobile":"rgba(255, 255, 255, 0.04)"
+      },
+      backdropBlur:{
+        new: "blur(5px)"
+      },
+      width:{
+        customWidth:'min(100% - 4rem, 80em)'
+      },
     },
   },
   plugins: [],
