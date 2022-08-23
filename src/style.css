@@ -64,7 +64,7 @@ header nav .hr{
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
 .homeBackground{
-    /*Background for screens breakpoint*/
+    /*Add background for homepage*/
     @apply bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop;
 }
 
@@ -97,53 +97,54 @@ header nav .hr{
     @apply bg-white w-44 h-44 font-bellefair text-black tracking-widest text-lg font-medium uppercase rounded-full hover:animate-pulse;
 }
 
+/* GLOBAL */
+.containerBox{
+    @apply grid grid-cols-1 gap-2 px-5 pt-32 md:grid-cols-2 xl:max-w-7xl xl:mx-auto;
+}
+
+.h2{
+    @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest md:leading-10 md:text-2xl md:pb-6;
+}
+
+.span{
+    @apply mr-4 font-bold opacity-25 mix-blend-normal md:ml-16
+}
+
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
 .destination{
     @apply h-auto md:h-full
 }
 
-.destinationBackground{
-    /*Background for screens breakpoint*/
-    @apply bg-destinationMobile md:bg-destinationTablet lg:bg-destinationDesktop;
-}
-
-.destination .containerDestination{
-    @apply grid grid-cols-1 gap-2 px-5 pt-32 md:grid-cols-2 xl:max-w-7xl xl:mx-auto;
-}
-
-.destination .containerDestination .h2{
-    @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest md:leading-10 md:text-2xl md:pb-6;
-}
-
-.destination .containerDestination .span{
-    @apply mr-4 font-bold opacity-25 mix-blend-normal md:ml-16
-}
-
-.destination .containerDestination .img{
+.img{
     @apply w-1/2 md:w-3/5 mx-auto md:mt-5;
 }
 
-.destination .containerDestination .infoBox{
+.destinationBackground{
+    /*Add background for destination page*/
+    @apply bg-destinationMobile md:bg-destinationTablet lg:bg-destinationDesktop;
+}
+
+.destination .infoBox{
     @apply text-center pt-5 md:pt-20 md:text-left pb-10;
 }
 
-.destination .containerDestination .title{
+.destination .title{
     @apply font-bellefair not-italic font-normal text-5xl uppercase leading-4 mb-6 md:text-7xl;
 }
 
-.destination .containerDestination .description{
+.destination .description{
     @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-10 w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
 }
 
-.destination .containerDestination .stats-container{
+.destination .stats-container{
     @apply grid grid-cols-1 gap-4 md:grid-cols-2 pt-5 md:w-2/3;
 }
 
-.destination .containerDestination .stats-design{
+.destination .stats-design{
     @apply text-sm font-barlowCondensed uppercase text-specialBlue tracking-wider leading-7;
 }
 
-.destination .containerDestination .stats-results{
+.destination .stats-results{
     @apply font-bellefair text-white tracking-normal text-2xl block;
 }
 
@@ -153,9 +154,10 @@ header nav .hr{
     @apply bg-crewMobile md:bg-crewTablet lg:bg-crewDesktop;
 }
 
+
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
 .technologyBackground{
-    /*Background for screens breakpoint*/
+    /*Add background for homepage*/
     @apply bg-technologyMobile md:bg-technologyTablet lg:bg-technologyDesktop;
 }
 

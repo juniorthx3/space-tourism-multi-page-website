@@ -8,7 +8,7 @@ const Destination = () => {
 
   return (
     <section className="destinationBackground destination">
-      <div className='containerDestination'>
+      <div className='containerBox'>
           <div className='text-center md:text-left'>
             <h2 className="h2">
               <span className="span">01</span>Pick your destination
