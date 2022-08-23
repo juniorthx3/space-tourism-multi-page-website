@@ -54,13 +54,14 @@ header nav .hr{
 
 /* MAKE DEDICATED BACKGROUND FIT THE WHOLE PAGES FOR HOME, DESTINATION, CREW AND TECHNOLOGY COMPONENTS*/
 .home, .destination, .crew, .technology{
-    @apply bg-cover bg-fixed absolute top-0 right-0 left-0 -z-10 text-white;
+    @apply bg-cover bg-fixed absolute top-0 right-0 left-0 -z-10 text-white overflow-hidden;
 }
 
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
-.crew, .technology{
-    @apply h-screen md:h-full;
+.destination, .crew, .technology{
+    @apply h-full overflow-auto md:overflow-hidden
 }
+
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
 .homeBackground{
@@ -99,7 +100,7 @@ header nav .hr{
 
 /* GLOBAL */
 .containerBox{
-    @apply grid grid-cols-1 gap-2 px-5 pt-32 md:grid-cols-2 xl:max-w-7xl xl:mx-auto;
+    @apply grid grid-cols-1 gap-2 px-5 pt-32 md:grid-cols-2 xl:max-w-7xl xl:mx-auto md:mt-14;
 }
 
 .h2{
@@ -110,12 +111,10 @@ header nav .hr{
     @apply mr-4 font-bold opacity-25 mix-blend-normal md:ml-16
 }
 
-/* DESTINATION COMPONENT (DESTINATION.JSX) */
-.destination{
-    @apply h-auto md:h-full
-}
 
-.img{
+/* DESTINATION COMPONENT (DESTINATION.JSX) */
+
+.destination .img{
     @apply w-1/2 md:w-3/5 mx-auto md:mt-5;
 }
 
@@ -132,7 +131,7 @@ header nav .hr{
     @apply font-bellefair not-italic font-normal text-5xl uppercase leading-4 mb-6 md:text-7xl;
 }
 
-.destination .description{
+.description{
     @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-10 w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
 }
 
@@ -153,7 +152,6 @@ header nav .hr{
     /*Background for screens breakpoint*/
     @apply bg-crewMobile md:bg-crewTablet lg:bg-crewDesktop;
 }
-
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
 .technologyBackground{
