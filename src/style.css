@@ -54,19 +54,19 @@ header nav .hr{
 
 /* MAKE DEDICATED BACKGROUND FIT THE WHOLE PAGES FOR HOME, DESTINATION, CREW AND TECHNOLOGY COMPONENTS*/
 .home, .destination, .crew, .technology{
-    @apply bg-cover bg-fixed absolute top-0 right-0 left-0 -z-10 text-white overflow-hidden;
+    @apply bg-cover bg-fixed absolute top-0 right-0 left-0 -z-10 text-white;
 }
 
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
 .destination, .crew, .technology{
-    @apply h-full overflow-auto md:overflow-hidden
+    @apply h-auto md:h-screen
 }
 
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
 .homeBackground{
     /*Add background for homepage*/
-    @apply bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop;
+    @apply bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop overflow-hidden;
 }
 
 .home{
@@ -104,7 +104,7 @@ header nav .hr{
 }
 
 .h2{
-    @apply mt-36 uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:px-20 md:text-left md:leading-10 md:text-2xl;
+    @apply mt-28 uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:mt-36 md:px-20 md:text-left md:leading-10 md:text-2xl;
 }
 
 .span{
@@ -124,7 +124,7 @@ header nav .hr{
 }
 
 .destination .infoBox{
-    @apply text-center pt-5  md:text-left pb-10;
+    @apply text-center md:pt-5 md:text-left pb-10;
 }
 
 .destination .title{
@@ -132,7 +132,7 @@ header nav .hr{
 }
 
 .description{
-    @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-10 w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
+    @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-8 md:pb-10 w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
 }
 
 .destination .stats-container{
