@@ -59,7 +59,7 @@ header nav .hr{
 
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
 .destination, .crew, .technology{
-    @apply h-auto md:h-screen
+    @apply h-full md:h-screen
 }
 
 
