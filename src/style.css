@@ -52,6 +52,7 @@ header nav .hr{
     @apply border-b-2 border-solid
 }
 
+/* GLOBAL */
 /* MAKE DEDICATED BACKGROUND FIT THE WHOLE PAGES FOR HOME, DESTINATION, CREW AND TECHNOLOGY COMPONENTS*/
 .home, .destination, .crew, .technology{
     @apply bg-cover absolute top-0 right-0 left-0 -z-10 text-white;
@@ -63,10 +64,25 @@ header nav .hr{
     @apply h-screen md:h-full;
 }
 
-.destination, .crew{
+.destination{
     @apply h-auto md:h-screen;
 }
 
+.crew{
+    @apply h-full md:h-screen;
+}
+
+.h2{
+    @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:text-left md:leading-10 md:text-2xl;
+}
+
+.span{
+    @apply mr-4 font-bold opacity-25 mix-blend-normal;
+}
+
+.containerBox{
+    @apply grid grid-cols-1 gap-10 md:grid-cols-2 content-center 
+}
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
 .homeBackground{
@@ -98,18 +114,6 @@ header nav .hr{
     @apply bg-white w-44 h-44 font-bellefair text-black tracking-widest text-lg font-medium uppercase rounded-full hover:animate-pulse;
 }
 
-/* GLOBAL */
-.containerBox{
-    @apply h-full grid grid-cols-1 gap-10 md:grid-cols-2 content-center xl:max-w-7xl xl:mx-auto;
-}
-
-.h2{
-    @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:text-left md:leading-10 md:text-2xl;
-}
-
-.span{
-    @apply mr-4 font-bold opacity-25 mix-blend-normal;
-}
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
 
@@ -151,6 +155,35 @@ header nav .hr{
     /*Background for screens breakpoint*/
     @apply bg-crewMobile md:bg-crewTablet lg:bg-crewDesktop;
 }
+
+.crew .nav-mobile{
+  @apply pt-5 flex items-center justify-center md:pt-0 md:hidden
+}
+
+.crew .nav-mobile .list{
+    @apply flex items-center justify-center md:justify-start md:mb-10;
+}
+
+.crew .desk-content{
+  @apply text-center md:text-left font-bellefair not-italic font-normal
+}
+
+.crew .desk-content .heading-3{
+    @apply text-lg leading-9 uppercase text-white mix-blend-normal opacity-50 md:text-3xl
+}
+
+.crew .desk-content .heading-4{
+    @apply text-2xl uppercase text-white mb-5 md:mt-4 md:text-5xl;
+}
+
+.crew .desk-content .text{
+    @apply mb-10 w-3/5 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
+}
+
+.crew .img{
+    @apply hidden w-1/2 mx-auto md:block md:absolute md:bottom-0 md:right-2/4 md:left-2/4 md:px-48;
+}
+
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
 .technologyBackground{
