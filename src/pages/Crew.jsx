@@ -9,9 +9,9 @@ const Crew = () => {
 
   return (
     <section className="crewBackground crew">
+      <h2 className="h2 md:mb-10"><span className="span">02</span>Meet your crew</h2>
        <div className='containerBox'>
           <div className='text-center md:text-left'>
-            <h2 className="h2 md:mb-24"><span className="span">02</span>Meet your crew</h2>
             <div className='block md:hidden'>   
               <img src={images.png} alt={name} title={name} className="w-1/2 mx-auto" />
               <hr className="text-specialBlue border-b-1 border-gray-500" />
