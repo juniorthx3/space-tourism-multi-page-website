@@ -54,12 +54,17 @@ header nav .hr{
 
 /* MAKE DEDICATED BACKGROUND FIT THE WHOLE PAGES FOR HOME, DESTINATION, CREW AND TECHNOLOGY COMPONENTS*/
 .home, .destination, .crew, .technology{
-    @apply bg-cover bg-fixed absolute top-0 right-0 left-0 -z-10 text-white;
+    @apply bg-cover absolute top-0 right-0 left-0 -z-10 text-white;
 }
 
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
-.destination, .crew, .technology{
-    @apply h-full md:h-screen
+.home, .technology{
+    /*Define size of screen for SM and MD*/
+    @apply h-screen md:h-full;
+}
+
+.destination, .crew{
+    @apply h-auto md:h-screen;
 }
 
 
@@ -67,11 +72,6 @@ header nav .hr{
 .homeBackground{
     /*Add background for homepage*/
     @apply bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop overflow-hidden;
-}
-
-.home{
-    /*Define size of screen for SM and MD*/
-    @apply h-screen md:h-full;
 }
 
 .home .containerHome{
@@ -100,31 +100,30 @@ header nav .hr{
 
 /* GLOBAL */
 .containerBox{
-    @apply grid grid-cols-1 gap-7 px-7 md:mx-3 md:grid-cols-2  xl:max-w-7xl xl:mx-auto;
+    @apply h-full grid grid-cols-1 gap-10 md:grid-cols-2 content-center xl:max-w-7xl xl:mx-auto;
 }
 
 .h2{
-    @apply mt-28 uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:mt-36 md:px-20 md:text-left md:leading-10 md:text-2xl;
+    @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:text-left md:leading-10 md:text-2xl;
 }
 
 .span{
-    @apply mr-4 font-bold opacity-25 mix-blend-normal md:ml-16
+    @apply mr-4 font-bold opacity-25 mix-blend-normal;
 }
-
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
 
 .destinationBackground{
     /*Add background for destination page*/
-    @apply bg-destinationMobile md:bg-destinationTablet lg:bg-destinationDesktop;
+    @apply bg-cover bg-destinationMobile md:bg-destinationTablet lg:bg-destinationDesktop;
 }
 
 .destination .img{
-    @apply w-1/2 mx-auto;
+    @apply w-3/5 mx-auto;
 }
 
 .destination .infoBox{
-    @apply text-center md:pt-5 md:text-left pb-10;
+    @apply text-center pb-10 md:text-left md:pb-0;
 }
 
 .destination .title{
@@ -132,7 +131,7 @@ header nav .hr{
 }
 
 .description{
-    @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-8 md:pb-10 w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
+    @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-8 md:pb-14  w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
 }
 
 .destination .stats-container{
@@ -140,7 +139,7 @@ header nav .hr{
 }
 
 .destination .stats-design{
-    @apply text-sm font-barlowCondensed uppercase text-specialBlue tracking-wider leading-7;
+    @apply text-sm font-barlowCondensed uppercase text-specialBlue tracking-wider leading-6;
 }
 
 .destination .stats-results{
