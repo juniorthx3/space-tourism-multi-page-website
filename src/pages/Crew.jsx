@@ -33,7 +33,6 @@ const Crew = () => {
                     ))}
                 </ul>
           </div>
-
         </div>
          {/* ***************************MOBILE + PC ****************************/}
         <div className='desk-content'>
