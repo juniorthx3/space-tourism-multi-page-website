@@ -24,7 +24,7 @@ header .nav{
 }
 
 header nav .hr{
-    @apply hidden xl:block absolute left-56 bg-white opacity-25;
+    @apply hidden absolute left-56 bg-white opacity-25 xl:block;
 }
 
 .btn-position, .btn-position2{
@@ -100,11 +100,11 @@ header nav .hr{
 
 /* GLOBAL */
 .containerBox{
-    @apply grid grid-cols-1 gap-2 px-5 pt-32 md:grid-cols-2 xl:max-w-7xl xl:mx-auto md:mt-14;
+    @apply grid grid-cols-1 gap-7 px-7 md:mx-3 md:grid-cols-2  xl:max-w-7xl xl:mx-auto;
 }
 
 .h2{
-    @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest md:leading-10 md:text-2xl md:pb-6;
+    @apply mt-36 uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:px-20 md:text-left md:leading-10 md:text-2xl;
 }
 
 .span{
@@ -114,17 +114,17 @@ header nav .hr{
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
 
-.destination .img{
-    @apply w-1/2 md:w-3/5 mx-auto md:mt-5;
-}
-
 .destinationBackground{
     /*Add background for destination page*/
     @apply bg-destinationMobile md:bg-destinationTablet lg:bg-destinationDesktop;
 }
 
+.destination .img{
+    @apply w-1/2 mx-auto;
+}
+
 .destination .infoBox{
-    @apply text-center pt-5 md:pt-20 md:text-left pb-10;
+    @apply text-center pt-5  md:text-left pb-10;
 }
 
 .destination .title{
