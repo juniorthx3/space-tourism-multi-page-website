@@ -59,9 +59,14 @@ header nav .hr{
 }
 
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
-.home, .technology{
+.home{
     /*Define size of screen for SM and MD*/
     @apply h-110 md:h-full;
+}
+
+.technology{
+    /*Define size of screen for SM and MD*/
+    @apply h-screen md:h-full;
 }
 
 .destination{
@@ -69,7 +74,7 @@ header nav .hr{
 }
 
 .crew{
-    @apply h-110 md:h-screen;
+    @apply h-screen md:h-screen;
 }
 
 .h2{
@@ -82,6 +87,18 @@ header nav .hr{
 
 .containerBox{
     @apply grid grid-cols-1 gap-3 md:grid-cols-2 content-center 
+}
+
+.heading-4{
+    @apply text-2xl uppercase text-white mb-5 mt-1 md:mt-2 md:text-5xl;
+}
+
+.text{
+    @apply mb-10 w-3/5 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
+}
+
+.text1{
+    @apply w-2/3 md:w-5/12 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
 }
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
@@ -172,18 +189,9 @@ header nav .hr{
     @apply text-lg leading-9 uppercase text-white mix-blend-normal opacity-50 md:text-3xl
 }
 
-.crew .desk-content .heading-4{
-    @apply text-2xl uppercase text-white mb-5 md:mt-4 md:text-5xl;
-}
-
-.crew .desk-content .text{
-    @apply mb-10 w-3/5 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
-}
-
 .crew .img{
     @apply hidden h-80 md:block md:mx-auto bg-cover md:absolute md:bottom-0 md:left-1/2;
 }
-
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
 .technologyBackground{
