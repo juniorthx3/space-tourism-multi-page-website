@@ -116,7 +116,7 @@ header nav .hr{
 }
 
 .home .containerHome .hero .heading-2{
-    @apply uppercase font-barlowCondensed not-italic font-normal text-2xl tracking-widest leading-8 text-specialBlue;
+    @apply uppercase font-barlowCondensed not-italic font-normal text-2xl tracking-widest text-specialBlue;
 }
 
 .home .containerHome .hero .heading-1{
