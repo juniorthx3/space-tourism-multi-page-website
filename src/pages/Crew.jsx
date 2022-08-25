@@ -40,7 +40,7 @@ const Crew = () => {
             <h2 className="heading-4">{name}</h2>
             <p className='text'>{bio}</p>
             {/* ***************************PC DESIGN*****************************/}
-            <div className='hidden md:block md:mt-20'>
+            <div className='hidden md:block md:mt-12 '>
                     <ul className="flex items-center justify-center md:justify-start mb-10">
                         {records.map((menu, index) => (
                           <li key={index} className="mr-7 md:mr-5 text-gray-500">

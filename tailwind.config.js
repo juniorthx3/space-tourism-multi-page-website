@@ -46,6 +46,11 @@ module.exports = {
       width:{
         customWidth:'min(100% - 4rem, 80em)'
       },
+      height:{
+        110:"110vh",
+        115:"115vh",
+        80:"80%"
+      }
     },
   },
   plugins: [],
