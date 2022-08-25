@@ -27,7 +27,7 @@ const Technology = () => {
                       </ul>
                 </div>
           </div> 
-          <img src={images.landscape} alt={name} title={name} className="img" />
+          <img src={images.portrait} alt={name} title={name} className="img" />
         </div>
       </div>
     </section>

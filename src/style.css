@@ -81,7 +81,7 @@ header nav .hr{
 }
 
 .containerBox{
-    @apply grid grid-cols-1 gap-10 md:grid-cols-2 content-center 
+    @apply grid grid-cols-1 gap-3 md:grid-cols-2 content-center 
 }
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
@@ -123,7 +123,7 @@ header nav .hr{
 }
 
 .destination .img{
-    @apply w-3/5 mx-auto;
+    @apply w-3/6 mx-auto;
 }
 
 .destination .infoBox{
@@ -131,11 +131,11 @@ header nav .hr{
 }
 
 .destination .title{
-    @apply font-bellefair not-italic font-normal text-5xl uppercase leading-4 mb-6 md:text-7xl;
+    @apply font-bellefair not-italic font-normal text-5xl uppercase leading-3 mb-6 md:mb-4 md:text-7xl;
 }
 
 .description{
-    @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-8 md:pb-14  w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
+    @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-8 md:pb-10  w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
 }
 
 .destination .stats-container{
