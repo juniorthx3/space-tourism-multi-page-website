@@ -24,7 +24,8 @@ header .nav{
 }
 
 header nav .hr{
-    @apply hidden absolute left-56 bg-white opacity-25 xl:block;
+    @apply hidden absolute left-36 bg-white opacity-25 md:block lg:w-3/12;
+
 }
 
 .btn-position, .btn-position2{
@@ -61,20 +62,16 @@ header nav .hr{
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
 .home{
     /*Define size of screen for SM and MD*/
-    @apply h-110 md:h-full;
+    @apply h-120 md:h-full;
 }
 
 .technology{
     /*Define size of screen for SM and MD*/
-    @apply h-screen md:h-full;
+    @apply h-110 md:h-full;
 }
 
-.destination{
+.destination, .crew{
     @apply h-auto md:h-screen;
-}
-
-.crew{
-    @apply h-screen md:h-screen;
 }
 
 .h2{
@@ -97,10 +94,6 @@ header nav .hr{
     @apply mb-10 w-3/5 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
 }
 
-.text1{
-    @apply w-2/3 md:w-5/12 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
-}
-
 /* HOME COMPONENT STYLES (HOME.JSX) */
 .homeBackground{
     /*Add background for homepage*/
@@ -108,11 +101,11 @@ header nav .hr{
 }
 
 .home .containerHome{
-    @apply h-full flex flex-col items-center justify-center md:flex-row md:justify-evenly w-customWidth m-auto;
+    @apply flex flex-col items-center justify-center md:h-full md:flex-row md:justify-evenly w-customWidth m-auto;
 }
 
 .home .containerHome .hero{
-    @apply mt-28 flex flex-col items-center justify-evenly md:flex-row md:mx-20;
+    @apply mt-32 flex flex-col items-center justify-evenly md:flex-row md:mx-20;
 }
 
 .home .containerHome .hero .heading-2{
@@ -124,7 +117,7 @@ header nav .hr{
 }
 
 .home .containerHome .hero .text{
-    @apply font-barlow not-italic font-normal text-sm text-specialBlue tracking-wider leading-6 text-center md:w-11/12 md:text-justify lg:w-1/2;
+    @apply font-barlow not-italic font-normal text-sm text-specialBlue tracking-wider leading-6 text-center w-10/12 md:w-11/12 md:text-justify lg:w-1/2;
 }
 
 .home .containerHome .btn{
@@ -197,6 +190,10 @@ header nav .hr{
 .technologyBackground{
     /*Add background for homepage*/
     @apply bg-technologyMobile md:bg-technologyTablet lg:bg-technologyDesktop;
+}
+
+.technology .text1{
+    @apply w-2/3 md:w-7/12 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
 }
 
 

@@ -13,10 +13,8 @@ const Header = () => {
   return (
     <header className='header'>
         <nav className='nav'>
-            <div>
-                <Link to="/"><img src={logo} alt="" /></Link>
-            </div>
-            <hr className='hr' style={{width:'473px', height:'1px'}}/>
+            <Link to="/"><img src={logo} alt="" /></Link>
+            <hr className='hr'/>
             <div className='hidden md:flex md:items-center'>
                 <ul className='space-x-12 flex uppercase text-base font-thin'>
                    <NavLink route={route} />
