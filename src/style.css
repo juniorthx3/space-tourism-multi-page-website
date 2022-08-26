@@ -62,7 +62,7 @@ header nav .hr{
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
 .home{
     /*Define size of screen for SM and MD*/
-    @apply h-115 md:h-full;
+    @apply h-screen md:h-full;
 }
 
 .technology{
@@ -70,7 +70,11 @@ header nav .hr{
     @apply h-110 md:h-full;
 }
 
-.destination, .crew{
+.crew{
+    @apply h-screen md:h-screen;
+}
+
+.destination{
     @apply h-auto md:h-screen;
 }
 
@@ -113,7 +117,7 @@ header nav .hr{
 }
 
 .home .containerHome .hero .text{
-    @apply font-barlow not-italic font-normal text-sm text-specialBlue tracking-wider leading-6 text-center w-10/12 md:w-11/12 md:text-justify lg:w-1/2;
+    @apply font-barlow not-italic font-normal text-sm text-specialBlue tracking-wider leading-6 text-center md:w-11/12 md:text-justify lg:w-1/2;
 }
 
 .home .containerHome .btn{
