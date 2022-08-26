@@ -65,18 +65,20 @@ header nav .hr{
     @apply h-screen md:h-full;
 }
 
-.technology{
-    /*Define size of screen for SM and MD*/
-    @apply h-110 md:h-full;
+.destination{
+    @apply h-auto md:h-screen;
 }
 
 .crew{
     @apply h-screen md:h-screen;
 }
 
-.destination{
-    @apply h-auto md:h-screen;
+.technology{
+    /*Define size of screen for SM and MD*/
+    @apply h-full;
 }
+
+
 
 .h2{
     @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:text-left md:leading-10 md:text-2xl;

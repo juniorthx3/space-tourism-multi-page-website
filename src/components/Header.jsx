@@ -21,13 +21,13 @@ const Header = () => {
                 </ul>
             </div>
             <button onClick={()=>setOpen(!open)} className="btn-position">
-              {open ? <img src={iconClose} alt="" className='hidden' /> : <img src={iconHamburger} alt="" />}
+              <img src={open ? iconClose : iconHamburger} alt="" />
             </button>
             {
                 open && (
                     <div className="menu-mobile">
                         <button onClick={()=>setOpen(!open)} className="btn-position2">
-                            {open ? <img src={iconClose} alt="" /> : <img src={iconHamburger} alt="" />}
+                            <img src={open ? iconClose : iconHamburger} alt="" />                           
                         </button> 
                         <ul className='menu-mobile-position'>
                              <NavLink route={route} />
