@@ -62,7 +62,7 @@ header nav .hr{
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
 .home{
     /*Define size of screen for SM and MD*/
-    @apply h-120 md:h-full;
+    @apply h-115 md:h-full;
 }
 
 .technology{
@@ -88,10 +88,6 @@ header nav .hr{
 
 .heading-4{
     @apply text-2xl uppercase text-white mb-5 mt-1 md:mt-2 md:text-5xl;
-}
-
-.text{
-    @apply mb-10 w-3/5 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
 }
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
@@ -182,6 +178,10 @@ header nav .hr{
     @apply text-lg leading-9 uppercase text-white mix-blend-normal opacity-50 md:text-3xl
 }
 
+.crew .text{
+    @apply mb-10 w-3/5 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
+}
+
 .crew .img{
     @apply hidden h-80 md:block md:mx-auto bg-cover md:absolute md:bottom-0 md:left-1/2;
 }
@@ -194,6 +194,30 @@ header nav .hr{
 
 .technology .text1{
     @apply w-2/3 md:w-7/12 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
+}
+
+.technology .techBox{
+    @apply flex flex-col-reverse justify-center items-center md:flex-row md:px-32;
+}
+
+.technology .btnInfo{
+    @apply text-center md:text-left font-bellefair not-italic font-normal md:flex;
+}
+
+.technology .boxBtn{
+    @apply flex justify-center items-center md:flex-col py-5 md:py-0 md:space-y-8
+}
+
+.technology .list{
+    @apply font-bellefair font-normal text-white mr-4 md:mr-14 text-xl;
+}
+
+.technology .btnDesign{
+    @apply pt-1 h-12 w-12  border border-white border-opacity-25 rounded-full;
+}
+
+.technology .heading-5{
+    @apply text-lg md:text-lg font-barlowCondensed text-specialBlue uppercase mix-blend-normal opacity-50
 }
 
 
