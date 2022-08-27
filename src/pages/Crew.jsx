@@ -12,7 +12,7 @@ const Crew = () => {
       <div className='mt-28 md:mt-36'>
       <h2 className="h2 mb-3 md:mb-0 md:mx-32"><span className="span">02</span>Meet your crew</h2>
       <div className='containerBox md:mt-24 md:px-32'>
-         {/* *************************MOBILE DESIGN************************* */}
+         {/* Mobile Design */}
          <div className='block md:hidden'>
           {/* Images of Crew in mobile size */}
           <div className='block md:hidden'>   
@@ -34,12 +34,12 @@ const Crew = () => {
                 </ul>
           </div>
         </div>
-         {/* ***************************MOBILE + PC ****************************/}
+         {/* Mobile + PC */}
         <div className='desk-content'>
             <h3 className='heading-3'>{role}</h3>
             <h2 className="heading-4">{name}</h2>
             <p className='text'>{bio}</p>
-            {/* ***************************PC DESIGN*****************************/}
+            {/* PC Design */}
             <div className='hidden md:block md:mt-14'>
                     <ul className="flex items-center justify-center md:justify-start mb-10">
                         {records.map((menu, index) => (
