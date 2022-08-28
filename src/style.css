@@ -62,23 +62,23 @@ header nav .hr{
 /* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
 .home{
     /*Define size of screen for SM and MD*/
-    @apply h-screen md:h-full;
+    @apply min-h-screen md:h-full;
 }
 
 .destination{
-    @apply h-auto md:h-screen;
+     /*Define size of screen for SM and MD*/
+    @apply min-h-screen md:h-screen;
 }
 
 .crew{
-    @apply h-screen md:h-screen;
+     /*Define size of screen for SM and MD*/
+    @apply min-h-screen;
 }
 
 .technology{
     /*Define size of screen for SM and MD*/
-    @apply h-full;
+    @apply min-h-screen
 }
-
-
 
 .h2{
     @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:text-left md:leading-10 md:text-2xl;
