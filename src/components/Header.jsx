@@ -11,13 +11,13 @@ const Header = () => {
     const route = location.split("/")[1]
     
   return (
-    <header className='header'>
+    <header>
         <nav className='nav'>
              {/* Desktop Menu */}
             <Link to="/"><img src={logo} alt="" /></Link>
             <hr className='hr'/>
-            <div className='hidden md:flex md:items-center'>
-                <ul className='space-x-12 flex uppercase text-base font-thin'>
+            <div className='hidden md:flex md:items-center bg-bgHeader backdrop-blur-lg p-6 w-1/2 absolute right-0'>
+                <ul className='ml-3 space-x-12 flex uppercase text-base font-thin'>
                    <Menu route={route} />
                 </ul>
             </div>

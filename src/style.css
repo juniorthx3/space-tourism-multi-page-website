@@ -7,16 +7,15 @@
 @tailwind utilities;
 
 body{
-    @apply m-0 p-0 box-border text-defaultSize;
+    @apply m-0 p-0 box-border text-defaultSize select-none;
+}
+
+.swiper-pagination{
 }
 
 /* HEADER COMPONENT STYLES (HEADER.JSX) */
 header{
-    @apply z-0 text-headerSize;
-}
-
-.header{
-    @apply bg-none relative mt-7 text-white lg:bg-bgHeader lg:backdrop-blur-new
+    @apply w-full z-0 text-headerSize bg-none relative mt-7 text-white;
 }
 
 header .nav{
@@ -28,6 +27,16 @@ header nav .hr{
 
 }
 
+/* MENU LINKS DESIGN (NAVLINK.JSX) */
+.menu-links{
+    @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest;
+}
+
+.menu-links-hover{
+    @apply md:border-b-2 md:border-solid
+}
+
+/* MOBILE VIEW DESIGN */
 .btn-position, .btn-position2{
     @apply absolute right-7 focus:outline-none md:hidden;
 }
@@ -42,15 +51,6 @@ header nav .hr{
 
 .menu-mobile-position{
     @apply uppercase text-sm absolute top-28 space-y-10 ml-6;
-}
-
-/* MENU LINKS DESIGN (NAVLINK.JSX) */
-.menu-links{
-    @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest;
-}
-
-.menu-links-hover{
-    @apply border-b-2 border-solid
 }
 
 /* GLOBAL */
@@ -123,7 +123,7 @@ header nav .hr{
 }
 
 .home .containerHome .btn{
-    @apply bg-white w-44 h-44 font-bellefair text-black tracking-widest text-lg font-medium uppercase rounded-full hover:animate-pulse;
+    @apply bg-white w-44 h-44 font-bellefair text-black tracking-widest text-lg font-medium uppercase rounded-full hover:animate-pulse hover:scale-110;
 }
 
 
@@ -189,7 +189,7 @@ header nav .hr{
 }
 
 .crew .img{
-    @apply hidden h-80 md:block md:mx-auto bg-cover md:absolute md:bottom-0 md:left-1/2;
+    @apply hidden md:h-full md:block md:mx-auto bg-cover md:absolute md:bottom-0 md:left-1/2;
 }
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
@@ -225,8 +225,6 @@ header nav .hr{
 .technology .heading-5{
     @apply text-lg md:text-lg font-barlowCondensed text-specialBlue uppercase mix-blend-normal opacity-50
 }
-
-
 
 
 
