@@ -3,8 +3,8 @@ import { destinations } from '../data'
 
 const Destination = () => {
   const [records] = useState(destinations)
-  const [indexx, setIndexx] = useState(0)
-  const {name, images, description, distance, travel}=records[indexx]
+  const [index, setIndex] = useState(0)
+  const {name, images, description, distance, travel}=records[index]
 
   return (
     <section className="destinationBackground destination">
@@ -14,10 +14,10 @@ const Destination = () => {
                 <img src={images.png} alt={name} title={name} className="img hover:animate-pulse" />
                 <div className='infoBox'>  
                     <ul className="flex items-center justify-center mb-8 md:justify-start">
-                        {records.map((menu, index) => (
-                          <li key={index} className="mr-7 md:mr-8">
-                            <button onClick={() => setIndexx(index)} 
-                                    className={`font-barlowCondensed not-italic font-normal leading-4 text-specialBlue uppercase text-md tracking-widest pb-2 focus:text-white md:text-md ${index === indexx && "border-b-2 border-white"}`}
+                        {records.map((menu, indicator) => (
+                          <li key={indicator} className="mr-7 md:mr-8">
+                            <button onClick={() => setIndex(indicator)} 
+                                    className={`font-barlowCondensed not-italic font-normal leading-4 text-specialBlue uppercase text-md tracking-widest pb-2 focus:text-white md:text-md ${indicator === index && "border-b-2 border-white"}`}
                             >
                               {menu.name}
                             </button>

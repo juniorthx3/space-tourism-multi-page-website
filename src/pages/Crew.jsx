@@ -23,14 +23,12 @@ const Crew = () => {
                       <div className='nav-mobile'>
                             <ul className="list">
                                 {records.map((menu, indicator) => (
-                                    <li key={indicator} className="px-2">
-                                      <button onClick={() => setIndex(index)} 
-                                              className={`${indicator === index && "border-white text-specialBlue"}`}
-                                      >
-                                        <FaCircle size={10}/>
-                                      </button>
-                                    </li>
-                                ))}
+                                      <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">
+                                        <button onClick={() => setIndex(indicator)} className={`${indicator === index && "border-white text-white"}`}>
+                                          <FaCircle size={10}/>
+                                        </button>
+                                      </li>
+                                ))} 
                             </ul>
                       </div>
                     </div>

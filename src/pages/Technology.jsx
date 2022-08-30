@@ -3,8 +3,8 @@ import { technology } from '../data'
 
 const Technology = () => {
   const [records] = useState(technology)
-  const [indexx, setIndexx] = useState(0)
-  const {name, images, description}=records[indexx]
+  const [index, setIndex] = useState(0)
+  const {name, images, description}=records[index]
 
   return (
     <section className="technologyBackground technology">
@@ -13,10 +13,10 @@ const Technology = () => {
         <div className='techBox'>
           <div className='btnInfo'>
                   <ul className="boxBtn">
-                      {records.map((menu, index) => (
-                          <li key={index} className="list">
-                              <button onClick={() => setIndexx(index)} className={`btnDesign ${index === indexx && "bg-white text-black"}`}>
-                                  {index + 1}  
+                      {records.map((menu, indicator) => (
+                          <li key={indicator} className="list">
+                              <button onClick={() => setIndex(indicator)} className={`btnDesign ${indicator === index && "bg-white text-black"}`}>
+                                  {indicator + 1}  
                               </button>
                           </li>
                       ))}
