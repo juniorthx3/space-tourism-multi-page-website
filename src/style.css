@@ -10,9 +10,6 @@ body{
     @apply m-0 p-0 box-border text-defaultSize select-none;
 }
 
-.swiper-pagination{
-}
-
 /* HEADER COMPONENT STYLES (HEADER.JSX) */
 header{
     @apply w-full z-0 text-headerSize bg-none relative mt-7 text-white;
@@ -189,7 +186,7 @@ header nav .hr{
 }
 
 .crew .img{
-    @apply hidden md:h-full md:block md:mx-auto bg-cover md:absolute md:bottom-0 md:left-1/2;
+    @apply hidden md:h-80 md:block md:mx-auto bg-cover md:absolute md:bottom-0 md:left-1/2;
 }
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
