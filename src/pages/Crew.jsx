@@ -42,7 +42,7 @@ const Crew = () => {
                         {/* PC Design */}
                         <div className='hidden md:block md:mt-14'>
                                 <ul className="flex items-center justify-center md:justify-start mb-10">
-                                    {Array.from({length:4}).map((indicator) => (
+                                    {records.map((menu, indicator) => (
                                       <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">
                                         <button onClick={() => setIndex(indicator)} className={`${indicator === index && "border-white text-white"}`}>
                                           <FaCircle size={10}/>
