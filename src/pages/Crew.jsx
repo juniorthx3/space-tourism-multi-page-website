@@ -16,7 +16,7 @@ const Crew = () => {
   return (
     <section className="crewBackground crew">
       <div className='mt-28 md:mt-36'>
-      <Swiper grabCursor={true} loop={false} pagination={{clickable:true}} modules={[Pagination]} style={{height:"550px"}}>
+      <Swiper grabCursor={true} loop={false} pagination={false} modules={[Pagination]} style={{height:"550px"}}>
          {
            records.map((member, index)=>(
             <SwiperSlide key={index}>
@@ -53,14 +53,13 @@ const Crew = () => {
                         <div className='hidden md:block md:mt-14'>
                                 <ul className="flex items-center justify-center md:justify-start mb-10">
                                     {records.map((menu, index) => (
-                                      <li key={index} className="mr-7 md:mr-5 text-gray-500">
+                                      <li key={index} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">
                                         <button onClick={() => setIndexx(index)} className={`${index === indexx && "border-white text-white"}`}>
                                           <FaCircle size={10}/>
                                         </button>
                                       </li>
                                     ))} 
                                 </ul>
-                                <div class="swiper-pagination"></div>
                           </div>
                     </div>  
                     <img src={member.images.png} alt={name} title={name} className="img" />
