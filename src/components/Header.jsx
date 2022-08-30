@@ -16,7 +16,7 @@ const Header = () => {
              {/* Desktop Menu */}
             <Link to="/"><img src={logo} alt="" /></Link>
             <hr className='hr'/>
-            <div className='hidden md:flex md:items-center bg-bgHeader backdrop-blur-lg p-6 w-1/2 absolute right-0'>
+            <div className='hidden md:flex md:items-center bg-bgHeader backdrop-blur-lg p-6 lg:w-1/2 absolute right-0'>
                 <ul className='ml-3 space-x-12 flex uppercase text-base font-thin'>
                    <Menu route={route} />
                 </ul>

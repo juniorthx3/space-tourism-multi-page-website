@@ -13,7 +13,7 @@ const Destination = () => {
             <div className='containerBox md:mt-12 xl:max-w-7xl xl:mx-auto'>
                 <img src={images.png} alt={name} title={name} className="img hover:animate-pulse" />
                 <div className='infoBox'>  
-                    <ul className="flex items-center justify-center mb-8 md:justify-start">
+                    <ul className="flex items-center justify-center mb-8 lg:justify-start">
                         {records.map((menu, indicator) => (
                           <li key={indicator} className="mr-7 md:mr-8">
                             <button onClick={() => setIndex(indicator)} 

@@ -51,31 +51,11 @@ header nav .hr{
 }
 
 /* GLOBAL */
-/* MAKE DEDICATED BACKGROUND FIT THE WHOLE PAGES FOR HOME, DESTINATION, CREW AND TECHNOLOGY COMPONENTS*/
+/* BACKGROUND PROPERTIES */
 .home, .destination, .crew, .technology{
-    @apply bg-cover absolute top-0 right-0 left-0 -z-10 text-white;
+    @apply min-h-screen bg-cover absolute top-0 right-0 left-0 -z-10 text-white lg:h-full;
 }
 
-/* COMPONENT CREW AND TECHNOLOGY BACKGROUND FIT...*/
-.home{
-    /*Define size of screen for SM and MD*/
-    @apply min-h-screen md:h-full;
-}
-
-.destination{
-     /*Define size of screen for SM and MD*/
-    @apply min-h-screen md:h-screen;
-}
-
-.crew{
-     /*Define size of screen for SM and MD*/
-    @apply min-h-screen;
-}
-
-.technology{
-    /*Define size of screen for SM and MD*/
-    @apply min-h-screen
-}
 
 .h2{
     @apply uppercase text-xl pb-5 font-barlowCondensed not-italic font-normal tracking-widest text-center md:text-left md:leading-10 md:text-2xl;
@@ -86,7 +66,7 @@ header nav .hr{
 }
 
 .containerBox{
-    @apply grid grid-cols-1 gap-3 md:grid-cols-2 content-center 
+    @apply grid grid-cols-1 gap-3 lg:grid-cols-2 content-center
 }
 
 .heading-4{
@@ -104,25 +84,24 @@ header nav .hr{
 }
 
 .home .containerHome .hero{
-    @apply mt-32 flex flex-col items-center justify-evenly md:flex-row md:mx-20;
+    @apply text-center mt-32 flex flex-col items-center justify-evenly lg:text-left lg:flex-row lg:mx-20;
 }
 
 .home .containerHome .hero .heading-2{
-    @apply uppercase font-barlowCondensed not-italic font-normal text-2xl tracking-widest text-specialBlue;
+    @apply text-center uppercase font-barlowCondensed not-italic font-normal text-2xl tracking-widest text-specialBlue lg:text-left;
 }
 
 .home .containerHome .hero .heading-1{
-    @apply text-8xl font-bellefair not-italic font-normal uppercase  md:text-9xl tracking-wider;
+    @apply text-center text-8xl font-bellefair not-italic font-normal uppercase  md:text-9xl tracking-wider lg:text-left;
 }
 
 .home .containerHome .hero .text{
-    @apply font-barlow not-italic font-normal text-sm text-specialBlue tracking-wider leading-6 text-center md:w-11/12 md:text-justify lg:w-1/2;
+    @apply mx-auto text-center font-barlow not-italic font-normal text-sm text-specialBlue tracking-wider leading-6 md:w-1/2 lg:text-justify lg:w-1/2 lg:mx-0;
 }
 
 .home .containerHome .btn{
     @apply bg-white w-44 h-44 font-bellefair text-black tracking-widest text-lg font-medium uppercase rounded-full hover:animate-pulse hover:scale-110;
 }
-
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
 
@@ -136,27 +115,27 @@ header nav .hr{
 }
 
 .destination .infoBox{
-    @apply text-center pb-10 md:text-left md:pb-0;
+    @apply text-center pb-10 lg:text-left lg:pb-0;
 }
 
 .destination .title{
-    @apply font-bellefair not-italic font-normal text-5xl uppercase leading-3 mb-6 md:mb-4 md:text-7xl;
+    @apply font-bellefair not-italic font-normal text-5xl uppercase leading-3 mb-6 md:text-7xl md:mb-4;
 }
 
 .description{
-    @apply text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-8 md:pb-10  w-4/5 mx-auto md:mx-0 md:w-3/5 md:text-justify;
+    @apply mx-auto text-center font-barlow not-italic font-normal text-sm leading-6 text-specialBlue border-b border-gray-500 pb-8 md:pb-14 lg:pb-10 w-3/5 lg:mx-0 lg:w-3/5 lg:text-justify;
 }
 
 .destination .stats-container{
-    @apply grid grid-cols-1 gap-4 md:grid-cols-2 pt-5 md:w-2/3;
+    @apply grid grid-cols-1 pt-5 md:mx-auto md:grid-cols-2 md:w-2/3 lg:gap-4 lg:mx-0;
 }
 
 .destination .stats-design{
-    @apply text-sm font-barlowCondensed uppercase text-specialBlue tracking-wider leading-6;
+    @apply text-sm font-barlowCondensed uppercase text-specialBlue tracking-wider leading-6 md:text-lg;
 }
 
 .destination .stats-results{
-    @apply font-bellefair text-white tracking-normal text-2xl block;
+    @apply font-bellefair text-white tracking-normal text-3xl lg:text-2xl block md:mt-2 lg:mt-0;
 }
 
 /* CREW COMPONENT STYLES (CREW.JSX) */
@@ -166,7 +145,7 @@ header nav .hr{
 }
 
 .crew .nav-mobile{
-  @apply pt-5 flex items-center justify-center md:pt-0 md:hidden
+    @apply pt-5 flex items-center justify-center md:pt-0 md:hidden
 }
 
 .crew .nav-mobile .list{
@@ -174,7 +153,7 @@ header nav .hr{
 }
 
 .crew .desk-content{
-  @apply text-center md:text-left font-bellefair not-italic font-normal
+    @apply text-center lg:text-left font-bellefair not-italic font-normal;
 }
 
 .crew .desk-content .heading-3{
@@ -182,11 +161,11 @@ header nav .hr{
 }
 
 .crew .text{
-    @apply mb-10 w-3/5 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
+    @apply text-center mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue w-3/4 md:text-left md:mb-0 lg:mx-0 lg:mb-10 lg:w-3/5
 }
 
 .crew .img{
-    @apply hidden md:h-80 md:block md:mx-auto bg-cover md:absolute md:bottom-0 md:left-1/2;
+    @apply hidden bg-cover md:block md:mx-auto md:h-72 lg:absolute md:bottom-0 lg:h-80 lg:left-1/2;
 }
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
@@ -200,7 +179,7 @@ header nav .hr{
 }
 
 .technology .techBox{
-    @apply flex flex-col-reverse justify-center items-center md:flex-row md:px-32;
+    @apply flex flex-col-reverse justify-center items-center lg:flex-row lg:px-32;
 }
 
 .technology .btnInfo{

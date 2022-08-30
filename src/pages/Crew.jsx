@@ -15,7 +15,7 @@ const Crew = () => {
                     {/* Mobile Design */}
                     <div className='block md:hidden'>
                       {/* Images of Crew in mobile size */}
-                      <div className='block md:hidden'>   
+                      <div>   
                           <img src={images.png} alt={name} title={name} className="w-1/3 mx-auto" />
                           <hr className="text-specialBlue border-b-1 border-gray-500" />
                       </div>
@@ -38,8 +38,8 @@ const Crew = () => {
                         <h2 className="heading-4">{name}</h2>
                         <p className='text'>{bio}</p>
                         {/* PC Design */}
-                        <div className='hidden md:block md:mt-14'>
-                                <ul className="flex items-center justify-center md:justify-start mb-10">
+                        <div className='hidden md:block md:mt-5 lg:mt-14'>
+                                <ul className="flex items-center justify-center lg:justify-start mb-10">
                                     {records.map((menu, indicator) => (
                                       <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">
                                         <button onClick={() => setIndex(indicator)} className={`${indicator === index && "border-white text-white"}`}>
