@@ -9,21 +9,21 @@ const Crew = () => {
 
   return (
     <section className="crewBackground crew">
-      <div className='mt-28 md:mt-36'>
-               <h2 className="h2 mb-3 md:mb-0 md:mx-32"><span className="span">02</span>Meet your crew</h2>
-                <div className='containerBox md:mt-24 md:px-32'>
+      <div className='mt-88 md:mt-136 lg:mt-150'>
+               <h2 className="h2 mb-3 md:mb-0 md:mx-38 lg:mb-0 lg:mx-32"><span className="span">02</span>Meet your crew</h2>
+                <div className='containerBox md:mt-8 lg:mt-12 xl:mx-auto'>
                     {/* Mobile Design */}
                     <div className='block md:hidden'>
                       {/* Images of Crew in mobile size */}
                       <div>   
-                          <img src={images.png} alt={name} title={name} className="w-1/3 mx-auto" />
+                          <img src={images.png} alt={name} title={name} className="w-177 mx-auto" />
                           <hr className="text-specialBlue border-b-1 border-gray-500" />
                       </div>
                       {/* Navigation in mobile size for Crew Team */}
                       <div className='nav-mobile'>
                             <ul className="list">
                                 {records.map((menu, indicator) => (
-                                      <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">
+                                      <li key={indicator} className="mr-4 md:mr-5 text-gray-500 cursor-pointer">
                                         <button onClick={() => setIndex(indicator)} className={`${indicator === index && "border-white text-white"}`}>
                                           <FaCircle size={10}/>
                                         </button>
@@ -34,16 +34,16 @@ const Crew = () => {
                     </div>
                     {/* Mobile + PC */}
                     <div className='desk-content'>
-                        <h3 className='heading-3'>{role}</h3>
+                        <h3 className='heading-3 pb-3'>{role}</h3>
                         <h2 className="heading-4">{name}</h2>
                         <p className='text'>{bio}</p>
                         {/* PC Design */}
-                        <div className='hidden md:block md:mt-5 lg:mt-14'>
+                        <div className='hidden md:block md:mt-10 lg:mt-14'>
                                 <ul className="flex items-center justify-center lg:justify-start mb-10">
                                     {records.map((menu, indicator) => (
                                       <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">
                                         <button onClick={() => setIndex(indicator)} className={`${indicator === index && "border-white text-white"}`}>
-                                          <FaCircle size={10}/>
+                                          <FaCircle size={11}/>
                                         </button>
                                       </li>
                                     ))} 

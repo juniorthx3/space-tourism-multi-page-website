@@ -10,7 +10,7 @@ const Destination = () => {
     <section className="destinationBackground destination">
        <div className='mt-88 md:mt-136 lg:mt-150'>
             <h2 className="h2 mb-3 md:mb-0 md:mx-38 lg:mb-0 lg:mx-32"><span className="span">01</span>Pick your destination</h2>
-            <div className='containerBox md:mt-8 lg:mt-12 xl:max-w-7xl xl:mx-auto'>
+            <div className='containerBox md:mt-8 lg:mt-12 xl:mx-auto'>
                 <img src={images.png} alt={name} title={name} className="img" />
                 <div className='infoBox'>  
                     <ul className="flex items-center justify-center mb-5 lg:justify-start">

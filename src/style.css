@@ -72,7 +72,7 @@ header nav .hr{
 }
 
 .heading-4{
-    @apply text-2xl uppercase text-white mb-5 mt-1 md:mt-2 md:text-5xl;
+    @apply font-bellefair not-italic font-normal text-2xl leading-28 uppercase text-white mb-5 mt-2 md:text-40;
 }
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
@@ -129,11 +129,11 @@ header nav .hr{
 }
 
 .destination .stats-container{
-    @apply grid grid-cols-1 py-8 md:mx-auto md:grid-cols-2 md:w-2/3 lg:gap-4 lg:mx-0;
+    @apply grid grid-cols-1 pt-8 lg:pt-6 md:mx-auto md:grid-cols-2 md:w-2/3 lg:gap-4 lg:mx-0;
 }
 
 .destination .stats-design{
-    @apply font-barlowCondensed not-italic font-normal text-sm leading-17 tracking-two3 uppercase text-specialBlue pb-8;
+    @apply font-barlowCondensed not-italic font-normal text-sm leading-17 tracking-two3 uppercase text-specialBlue pb-5 md:pb-8;
 }
 
 .destination .stats-results{
@@ -159,15 +159,15 @@ header nav .hr{
 }
 
 .crew .desk-content .heading-3{
-    @apply text-lg leading-9 uppercase text-white mix-blend-normal opacity-50 md:text-3xl
+    @apply font-bellefair not-italic font-normal text-15 leading-18 uppercase text-white mix-blend-normal opacity-50 mt-2 md:text-defaultSize md:leading-28
 }
 
 .crew .text{
-    @apply text-center mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue w-3/4 md:text-left md:mb-0 lg:mx-0 lg:mb-10 lg:w-3/5
+    @apply w-458 font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto md:text-defaultSize md:leading-28 lg:text-left md:mb-0 lg:mx-0 lg:mb-10 lg:w-3/5
 }
 
 .crew .img{
-    @apply hidden bg-cover md:block md:mx-auto md:h-72 lg:absolute md:bottom-0 lg:h-80 lg:left-1/2;
+    @apply hidden md:block md:w-456 lg:absolute md:mx-auto md:bottom-0 lg:w-568 lg:left-1/2;
 }
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
