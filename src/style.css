@@ -16,7 +16,7 @@ header{
 }
 
 header .nav{
-    @apply h-96  flex items-center justify-between py-3 pl-10 md:pr-32 lg:pr-64
+    @apply  flex items-center justify-between py-3 pl-10 md:pr-32 lg:pr-64
 }
 
 header nav .hr{
