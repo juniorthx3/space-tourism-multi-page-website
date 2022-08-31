@@ -19,7 +19,8 @@ module.exports = {
     extend: {
       colors:{
         specialBlue:"#D0D6F9",
-        specialBlk:"#0B0D17"
+        specialBlk:"#0B0D17",
+        borderBlk:"#383B4B"
       },
       fontSize:{
         defaultSize:"16px",
@@ -28,6 +29,7 @@ module.exports = {
         18:"18px",
         heading5:"28px",
         32:"32px",
+        56:"56px",
         80:"80px",
         150:"150px"
       },
@@ -53,6 +55,7 @@ module.exports = {
       width:{
         customWidth:'min(100% - 4rem, 80em)',
         150:"150px",
+        170:"170px",
         274:"274px",
         473:"473px"
       },
@@ -68,7 +71,8 @@ module.exports = {
         two3:"2.3625px",
         two7:"2.7px",
         three38:"3.38px",
-        head5space:"4.725px"
+        head5space:"4.725px",
+        17:"17px"
       },
       lineHeight:{
         17:"17px",
@@ -78,12 +82,16 @@ module.exports = {
         32:"32px",
         34:"34px",
         37:"37px",
+        64:"64px",
         100:"100px",
         150:"150px",
         172:"172px"
       },
       borderWidth:{
         3:"3px"
+      },
+      margin:{
+        88:"88px"
       }
     },
   },
