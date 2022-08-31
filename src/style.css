@@ -12,11 +12,11 @@ body{
 
 /* HEADER COMPONENT STYLES (HEADER.JSX) */
 header{
-    @apply w-full z-0 text-headerSize bg-none relative mt-7 text-white;
+    @apply w-full h-96 bg-none mt-10 text-white;
 }
 
 header .nav{
-    @apply flex items-center justify-between py-3 pl-10 md:pr-32 lg:pr-64
+    @apply h-96  flex items-center justify-between py-3 pl-10 md:pr-32 lg:pr-64
 }
 
 header nav .hr{
@@ -88,19 +88,19 @@ header nav .hr{
 }
 
 .home .containerHome .hero .heading-2{
-    @apply text-center uppercase font-barlowCondensed not-italic font-normal text-2xl tracking-widest text-specialBlue lg:text-left;
-}
+    @apply font-barlowCondensed not-italic font-normal text-heading5 leading-34 tracking-head5space text-specialBlue uppercase text-center lg:text-left;
+}   
 
 .home .containerHome .hero .heading-1{
-    @apply text-center text-8xl font-bellefair not-italic font-normal uppercase  md:text-9xl tracking-wider lg:text-left;
+    @apply font-bellefair not-italic font-normal text-150 leading-172 uppercase text-center lg:text-left;
 }
 
 .home .containerHome .hero .text{
-    @apply mx-auto text-center font-barlow not-italic font-normal text-sm text-specialBlue tracking-wider leading-6 md:w-1/2 lg:text-justify lg:w-1/2 lg:mx-0;
-}
+    @apply font-barlow not-italic font-normal text-18 leading-32 text-specialBlue mx-auto text-center md:w-1/2 lg:text-justify lg:w-1/2 lg:mx-0;
+} 
 
 .home .containerHome .btn{
-    @apply bg-white w-44 h-44 font-bellefair text-black tracking-widest text-lg font-medium uppercase rounded-full hover:animate-pulse hover:scale-110;
+    @apply font-bellefair not-italic font-normal text-32 leading-37 tracking-2 text-specialBlk bg-white w-274 h-274 uppercase rounded-full hover:animate-pulse;
 }
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */

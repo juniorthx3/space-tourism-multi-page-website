@@ -18,11 +18,16 @@ module.exports = {
     },
     extend: {
       colors:{
-        specialBlue:"#D0D6F9"
+        specialBlue:"#D0D6F9",
+        specialBlk:"#0B0D17"
       },
       fontSize:{
         defaultSize:"16px",
-        headerSize:"calc(10px + 2vmin)"
+        headerSize:"calc(10px + 2vmin)",
+        18:"18px",
+        heading5:"28px",
+        32:"32px",
+        150:"150px"
       },
       backgroundImage:{
         'homeDesktop':"url('../src/assets/home/background-home-desktop.jpg')",
@@ -44,11 +49,24 @@ module.exports = {
         new: "blur(5px)"
       },
       width:{
-        customWidth:'min(100% - 4rem, 80em)'
+        customWidth:'min(100% - 4rem, 80em)',
+        274:"274px"
       },
       height:{
-        80:"80%"
+        80:"80%",
+        96:"96px",
+        274:"274px"
       },
+      letterSpacing:{
+        2:"2px",
+        head5space:"4.725px"
+      },
+      lineHeight:{
+        32:"32px",
+        34:"34px",
+        37:"37px",
+        172:"172px"
+      }
     },
   },
   plugins: [],
