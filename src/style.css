@@ -12,7 +12,7 @@ body{
 
 /* HEADER COMPONENT STYLES (HEADER.JSX) */
 header{
-    @apply h-96 ml-5 md:ml-14 bg-none text-white flex relative md:mt-0 lg:mt-10;
+    @apply h-96 ml-5 md:ml-9 bg-none text-white flex relative md:mt-0 lg:mt-10;
 }
 
 header .nav{
@@ -56,8 +56,11 @@ header nav .hr{
     @apply min-h-screen bg-cover absolute top-0 right-0 left-0 -z-10 text-white lg:h-full;
 }
 
+.destination{
+    @apply md:h-auto
+}
 .h2{
-    @apply font-barlowCondensed not-italic font-normal text-defaultSize leading-19 tracking-two7 uppercase pb-5 text-center md:text-left md:leading-10 md:text-2xl;
+    @apply font-barlowCondensed not-italic font-normal text-defaultSize leading-19 tracking-two7 uppercase pb-5 text-center md:text-left md:leading-10 md:text-2xl lg:text-heading5 lg:leading-34 lg:tracking-head5space;
 }
 
 .span{
@@ -110,19 +113,19 @@ header nav .hr{
 }
 
 .destination .img{
-    @apply w-170 md:w-3/6 mx-auto;
+    @apply w-170 md:w-300 lg:w-445 mx-auto;
 }
 
 .destination .infoBox{
-    @apply text-center pb-10 lg:text-left lg:pb-0;
+    @apply text-center pb-10 md:m-8 lg:m-0 lg:text-left lg:pb-0;
 }
 
 .destination .title{
-    @apply font-bellefair not-italic font-normal text-56 leading-64 uppercase  md:text-7xl md:mb-4;
+    @apply font-bellefair not-italic font-normal text-56 leading-64 md:text-80 md:leading-92 uppercase md:mb-2 lg:text-100 lg:leading-115;
 }
 
 .destination .description{
-    @apply w-80 font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto border-b border-borderBlk pb-8 md:pb-14 lg:pb-10  lg:mx-0 lg:w-3/5 lg:text-justify;
+    @apply w-80 font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto border-b border-borderBlk pb-8 md:text-base md:w-573 md:leading-7 md:pb-14 lg:text-18 lg:w-444 lg:pb-10 lg:mx-0 lg:leading-32 lg:text-justify;
 }
 
 .destination .stats-container{
@@ -130,11 +133,11 @@ header nav .hr{
 }
 
 .destination .stats-design{
-    @apply font-barlowCondensed not-italic font-normal text-sm leading-17 tracking-two3 uppercase text-specialBlue pb-8 md:text-lg;
+    @apply font-barlowCondensed not-italic font-normal text-sm leading-17 tracking-two3 uppercase text-specialBlue pb-8;
 }
 
 .destination .stats-results{
-    @apply font-bellefair font-normal text-heading5 leading-8 text-white lg:text-2xl block mt-2 lg:mt-0;
+    @apply block font-bellefair not-italic font-normal text-heading5 leading-8 text-white mt-2 md:leading-32 md:mt-3 lg:mt-2;
 }
 
 /* CREW COMPONENT STYLES (CREW.JSX) */
