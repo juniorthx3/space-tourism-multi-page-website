@@ -12,25 +12,25 @@ body{
 
 /* HEADER COMPONENT STYLES (HEADER.JSX) */
 header{
-    @apply w-full h-96 bg-none mt-10 text-white;
+    @apply h-96 ml-5 md:ml-14 bg-none text-white flex relative md:mt-0 lg:mt-10;
 }
 
 header .nav{
-    @apply  flex items-center justify-between py-3 pl-10 md:pr-32 lg:pr-64
+    @apply flex items-center justify-between py-3 lg:pr-64;
 }
 
 header nav .hr{
-    @apply hidden absolute left-36 bg-white opacity-25 md:block lg:w-3/12;
+    @apply hidden absolute left-36 bg-white opacity-25 mix-blend-normal md:block lg:w-473;
 
 }
 
 /* MENU LINKS DESIGN (NAVLINK.JSX) */
 .menu-links{
-    @apply text-xl md:text-base pb-6 font-barlowCondensed not-italic font-light tracking-widest;
+    @apply font-barlowCondensed not-italic font-normal md:pb-11 md:text-sm md:leading-17 md:tracking-two3 hover:border-b-2 hover:border-solid hover:border-gray-400 lg:pb-9 lg:text-defaultSize lg:leading-19 lg:tracking-two7;
 }
 
-.menu-links-hover{
-    @apply md:border-b-2 md:border-solid
+.menu-links-active{
+    @apply md:border-b-3 md:border-solid
 }
 
 /* MOBILE VIEW DESIGN */
@@ -80,27 +80,27 @@ header nav .hr{
 }
 
 .home .containerHome{
-    @apply flex flex-col items-center justify-center md:h-full md:flex-row md:justify-evenly w-customWidth m-auto;
+    @apply mx-auto flex flex-col items-center justify-center md:h-full md:flex-row md:justify-evenly w-customWidth;
 }
 
 .home .containerHome .hero{
-    @apply text-center mt-32 flex flex-col items-center justify-evenly lg:text-left lg:flex-row lg:mx-20;
+    @apply text-center mt-28 md:mt-56 lg:mt-52 flex flex-col items-center justify-evenly lg:text-left lg:flex-row lg:mx-20;
 }
 
 .home .containerHome .hero .heading-2{
-    @apply font-barlowCondensed not-italic font-normal text-heading5 leading-34 tracking-head5space text-specialBlue uppercase text-center lg:text-left;
+    @apply font-barlowCondensed not-italic font-normal text-defaultSize leading-19 text-center tracking-two7 text-specialBlue uppercase md:text-2xl md:leading-6 md:tracking-three38 lg:text-heading5 lg:leading-34 lg:tracking-head5space lg:text-left;
 }   
 
 .home .containerHome .hero .heading-1{
-    @apply font-bellefair not-italic font-normal text-150 leading-172 uppercase text-center lg:text-left;
+    @apply font-bellefair not-italic font-normal text-80 leading-100 uppercase text-center my-5 md:text-150 md:leading-150 lg:leading-172 lg:text-left;
 }
 
 .home .containerHome .hero .text{
-    @apply font-barlow not-italic font-normal text-18 leading-32 text-specialBlue mx-auto text-center md:w-1/2 lg:text-justify lg:w-1/2 lg:mx-0;
+    @apply font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto md:text-base md:w-7/12 md:leading-7 lg:text-18 lg:leading-32 lg:text-justify lg:w-3/5 lg:mx-0;
 } 
 
 .home .containerHome .btn{
-    @apply font-bellefair not-italic font-normal text-32 leading-37 tracking-2 text-specialBlk bg-white w-274 h-274 uppercase rounded-full hover:animate-pulse;
+    @apply font-bellefair not-italic font-normal text-xl leading-23 tracking-One25 text-specialBlk bg-white w-150 h-150 md:w-274 md:h-274 uppercase rounded-full md:text-32 md:leading-37 md:tracking-2  ;
 }
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */

@@ -14,9 +14,9 @@ const Header = () => {
     <header>
         <nav className='nav'>
              {/* Desktop Menu */}
-            <Link to="/"><img src={logo} alt="" /></Link>
+            <Link to="/"><img src={logo} alt="" className='mt-1'/></Link>
             <hr className='hr'/>
-            <div className='hidden md:flex md:items-center h-96 bg-bgHeader backdrop-blur-lg p-6 lg:w-1/2 absolute right-0'>
+            <div className='hidden md:flex md:items-center h-96 bg-bgHeader backdrop-blur-lg p-14 lg:p-6 lg:w-1/2 absolute right-0'>
                 <ul className='ml-3 space-x-12 flex uppercase text-base font-thin'>
                    <Menu route={route} />
                 </ul>

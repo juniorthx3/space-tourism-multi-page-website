@@ -13,8 +13,8 @@ const Menu = ({route}) => {
         links.map((link, index)=>{
           return (
             <li key={index}>
-            <Link to={`/${link.pathName}`} className={route === link.pathName ? 'menu-links menu-links-hover' : 'menu-links'}>
-                <span className='hidden lg:inline-block font-bold pr-1'>0{index}</span> {link.name}
+            <Link to={`/${link.pathName}`} className={route === link.pathName ? 'menu-links menu-links-active' : 'menu-links'}>
+                <span className='hidden font-bold lg:inline-block pr-1'>0{index}</span> {link.name}
             </Link>
           </li>
           )

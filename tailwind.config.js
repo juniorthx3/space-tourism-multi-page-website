@@ -24,9 +24,11 @@ module.exports = {
       fontSize:{
         defaultSize:"16px",
         headerSize:"calc(10px + 2vmin)",
+        15:"15px",
         18:"18px",
         heading5:"28px",
         32:"32px",
+        80:"80px",
         150:"150px"
       },
       backgroundImage:{
@@ -50,22 +52,38 @@ module.exports = {
       },
       width:{
         customWidth:'min(100% - 4rem, 80em)',
-        274:"274px"
+        150:"150px",
+        274:"274px",
+        473:"473px"
       },
       height:{
         80:"80%",
         96:"96px",
+        150:"150px",
         274:"274px"
       },
       letterSpacing:{
+        One25:"1.25px",
         2:"2px",
+        two3:"2.3625px",
+        two7:"2.7px",
+        three38:"3.38px",
         head5space:"4.725px"
       },
       lineHeight:{
+        17:"17px",
+        19:"19.2px",
+        23:"23px",
+        25:"25px",
         32:"32px",
         34:"34px",
         37:"37px",
+        100:"100px",
+        150:"150px",
         172:"172px"
+      },
+      borderWidth:{
+        3:"3px"
       }
     },
   },
