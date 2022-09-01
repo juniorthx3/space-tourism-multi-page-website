@@ -27,13 +27,14 @@ module.exports = {
         headerSize:"calc(10px + 2vmin)",
         15:"15px",
         18:"18px",
+        26:"26px",
         heading5:"28px",
         32:"32px",
         40:"40px",
         56:"56px",
         80:"80px",
         100:"100px",
-        150:"150px"
+        150:"150px",
       },
       backgroundImage:{
         'homeDesktop':"url('../src/assets/home/background-home-desktop.jpg')",
@@ -58,6 +59,8 @@ module.exports = {
         customWidth:'min(100% - 4rem, 80em)',
         150:"150px",
         170:"170px",
+        212:"212px",
+        242:"242px",
         274:"274px",
         300:"300px",
         444:"444px",
@@ -74,7 +77,10 @@ module.exports = {
         80:"80%",
         96:"96px",
         150:"150px",
-        274:"274px"
+        242:"242px",
+        274:"274px",
+        712:"712px",
+        212:"212px"
       },
       letterSpacing:{
         One25:"1.25px",
@@ -82,6 +88,7 @@ module.exports = {
         two3:"2.3625px",
         two7:"2.7px",
         three38:"3.38px",
+        four38:"4.38px",
         head5space:"4.725px",
         17:"17px"
       },
@@ -95,6 +102,7 @@ module.exports = {
         32:"32px",
         34:"34px",
         37:"37px",
+        54:"54px",
         64:"64px",
         92:"92px",
         100:"100px",

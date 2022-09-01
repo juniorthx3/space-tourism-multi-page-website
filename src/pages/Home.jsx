@@ -14,7 +14,7 @@ const Home = () => {
                       because we'll give you a truly out of this world experience!
                   </p>
               </div>
-              <div className='mt-16 md:mt-32 md:w-1/2'>
+              <div className='mt-16 md:mt-32 md:w-274'>
                 <Link to="/destination"><button className='btn'>Explore</button></Link>
               </div>
           </div>

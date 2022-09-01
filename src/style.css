@@ -57,8 +57,9 @@ header nav .hr{
 }
 
 .destination{
-    @apply md:h-auto
+    @apply md:h-auto;
 }
+
 .h2{
     @apply font-barlowCondensed not-italic font-normal text-defaultSize leading-19 tracking-two7 uppercase pb-5 text-center md:text-left md:leading-10 md:text-2xl lg:text-heading5 lg:leading-34 lg:tracking-head5space;
 }
@@ -72,7 +73,7 @@ header nav .hr{
 }
 
 .heading-4{
-    @apply font-bellefair not-italic font-normal text-2xl leading-28 uppercase text-white mb-5 mt-2 md:text-40;
+    @apply font-bellefair not-italic font-normal text-2xl leading-28 uppercase text-white mb-5 mt-2 md:text-40 xl:text-56 xl:leading-54;
 }
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
@@ -90,19 +91,19 @@ header nav .hr{
 }
 
 .home .containerHome .hero .heading-2{
-    @apply font-barlowCondensed not-italic font-normal text-defaultSize leading-19 text-center tracking-two7 text-specialBlue uppercase md:text-2xl md:leading-6 md:tracking-three38 lg:text-heading5 lg:leading-34 lg:tracking-head5space lg:text-left;
+    @apply font-barlowCondensed not-italic font-normal text-defaultSize leading-19 text-center tracking-two7 text-specialBlue uppercase md:text-2xl md:leading-6 md:tracking-three38 lg:text-left xl:text-heading5 xl:leading-34 xl:tracking-head5space;
 }   
 
 .home .containerHome .hero .heading-1{
-    @apply font-bellefair not-italic font-normal text-80 leading-100 uppercase text-center my-5 md:text-150 md:leading-150 lg:leading-172 lg:text-left;
+    @apply font-bellefair not-italic font-normal text-80 leading-100 uppercase text-center my-5 md:text-150 md:leading-150 lg:text-left xl:leading-172 ;
 }
 
 .home .containerHome .hero .text{
-    @apply font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto md:text-base md:w-7/12 md:leading-7 lg:text-18 lg:leading-32 lg:text-justify lg:w-3/5 lg:mx-0;
+    @apply font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto md:text-base md:w-7/12 md:leading-7 lg:text-justify lg:mx-0 xl:text-18 xl:leading-32 xl:w-3/5 ;
 } 
 
 .home .containerHome .btn{
-    @apply font-bellefair not-italic font-normal text-xl leading-23 tracking-One25 text-specialBlk bg-white w-150 h-150 md:w-274 md:h-274 uppercase rounded-full md:text-32 md:leading-37 md:tracking-2  ;
+    @apply font-bellefair not-italic font-normal text-xl leading-23 tracking-One25 text-specialBlk bg-white w-150 h-150 uppercase rounded-full md:w-242 md:h-242 md:text-32 md:leading-37 md:tracking-2 lg:text-xl lg:w-212 lg:h-212 xl:w-274 xl:h-274;
 }
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
@@ -159,15 +160,15 @@ header nav .hr{
 }
 
 .crew .desk-content .heading-3{
-    @apply font-bellefair not-italic font-normal text-15 leading-18 uppercase text-white mix-blend-normal opacity-50 mt-2 md:text-defaultSize md:leading-28
+    @apply font-bellefair not-italic font-normal text-15 leading-18 uppercase text-white mix-blend-normal opacity-50 mt-2 md:text-defaultSize md:leading-28 xl:text-32 xl:leading-37
 }
 
 .crew .text{
-    @apply w-458 font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto md:text-defaultSize md:leading-28 lg:text-left md:mb-0 lg:mx-0 lg:mb-10 lg:w-3/5
+    @apply w-458 font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto md:text-defaultSize md:leading-28 md:mb-0 xl:text-left xl:text-18 xl:mx-0 xl:mb-10 xl:w-444 xl:leading-32
 }
 
 .crew .img{
-    @apply hidden md:block md:w-456 lg:absolute md:mx-auto md:bottom-0 lg:w-568 lg:left-1/2;
+    @apply hidden md:block md:w-456 lg:absolute md:mx-auto md:bottom-0 xl:left-1/2 xl:w-568 xl:h-712;
 }
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */

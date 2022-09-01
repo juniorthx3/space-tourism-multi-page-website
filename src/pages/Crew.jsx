@@ -11,7 +11,7 @@ const Crew = () => {
     <section className="crewBackground crew">
       <div className='mt-88 md:mt-136 lg:mt-150'>
                <h2 className="h2 mb-3 md:mb-0 md:mx-38 lg:mb-0 lg:mx-32"><span className="span">02</span>Meet your crew</h2>
-                <div className='containerBox md:mt-8 lg:mt-12 xl:mx-auto'>
+                <div className='containerBox md:mt-8 lg:mt-12 xl:mt-36 xl:mx-32'>
                     {/* Mobile Design */}
                     <div className='block md:hidden'>
                       {/* Images of Crew in mobile size */}
