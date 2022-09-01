@@ -14,7 +14,7 @@ const Menu = ({route}) => {
           return (
             <li key={index}>
             <Link to={`/${link.pathName}`} className={route === link.pathName ? 'menu-links menu-links-active' : 'menu-links'}>
-                <span className='hidden font-bold lg:inline-block pr-1'>0{index}</span> {link.name}
+                <span className='md:hidden font-bold lg:inline-block pr-1'>0{index}</span> {link.name}
             </Link>
           </li>
           )

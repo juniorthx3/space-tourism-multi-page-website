@@ -5,7 +5,7 @@ const Home = () => {
     <section className="homeBackground home">
        <div className="containerHome">
           <div className="hero">
-              <div className='mx-auto text-center md:text-left'>
+              <div className='text-center md:text-left'>
                   <h5 className='heading-2'>So, you want to travel to</h5>
                   <h4 className='heading-1'>Space</h4>
                   <p className='text'>

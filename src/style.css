@@ -12,11 +12,23 @@ body{
 
 /* HEADER COMPONENT STYLES (HEADER.JSX) */
 header{
-    @apply h-96 ml-5 md:ml-9 bg-none text-white flex relative md:mt-0 lg:mt-10;
+    @apply bg-none text-white flex items-center h-24 relative md:mt-0 lg:mt-10;
 }
 
-header .nav{
-    @apply flex items-center justify-between py-3 lg:pr-64;
+header nav{
+    @apply flex items-center justify-between;
+}
+
+header nav .menu-desktop{
+    @apply hidden md:flex md:items-center bg-bgHeader backdrop-blur-lg h-full md:p-6 lg:w-830 absolute right-0;
+}
+
+header nav .menu-desktop .list-desktop{
+    @apply ml-0 space-x-12 flex uppercase text-base font-normal xl:ml-24;
+}
+
+header nav img{
+    @apply mt-1 ml-5 md:ml-10;
 }
 
 header nav .hr{
@@ -24,21 +36,11 @@ header nav .hr{
 
 }
 
-/* MENU LINKS DESIGN (NAVLINK.JSX) */
-.menu-links{
-    @apply font-barlowCondensed not-italic font-normal md:pb-11 md:text-sm md:leading-17 md:tracking-two3 hover:border-b-2 hover:border-solid hover:border-gray-400 lg:pb-9 lg:text-defaultSize lg:leading-19 lg:tracking-two7;
-}
-
-.menu-links-active{
-    @apply md:border-b-3 md:border-solid
-}
-
-/* MOBILE VIEW DESIGN */
-.btn-position, .btn-position2{
+.desktop-btn-position, .mobile-btn-position{
     @apply absolute right-7 focus:outline-none md:hidden;
 }
 
-.btn-position2{
+.mobile-btn-position{
     @apply top-14;
 }
 
@@ -48,6 +50,18 @@ header nav .hr{
 
 .menu-mobile-position{
     @apply uppercase text-sm absolute top-28 space-y-10 ml-6;
+}
+
+/* MENU LINKS DESIGN (NAVLINK.JSX) */
+.menu-links{
+    @apply font-barlowCondensed not-italic font-normal text-base leading-19 tracking-2 pb-6 
+    hover:border-b-2 hover:border-solid hover:border-gray-400 md:pb-9 
+    md:text-sm md:leading-17 md:tracking-two3 
+    xl:text-base xl:leading-19 xl:tracking-two7;
+}
+
+.menu-links-active{
+    @apply md:border-b-3 md:border-solid
 }
 
 /* GLOBAL */
@@ -60,8 +74,14 @@ header nav .hr{
     @apply md:h-auto;
 }
 
+.h2, .heading-4{
+    @apply not-italic font-normal
+}
+
 .h2{
-    @apply font-barlowCondensed not-italic font-normal text-defaultSize leading-19 tracking-two7 uppercase pb-5 text-center md:text-left md:leading-10 md:text-2xl lg:text-heading5 lg:leading-34 lg:tracking-head5space;
+    @apply font-barlowCondensed text-defaultSize leading-19 tracking-two7 uppercase pb-5 text-center 
+           md:text-left md:leading-10 md:text-2xl 
+           lg:text-heading5 lg:leading-34 lg:tracking-head5space;
 }
 
 .span{
@@ -73,7 +93,7 @@ header nav .hr{
 }
 
 .heading-4{
-    @apply font-bellefair not-italic font-normal text-2xl leading-28 uppercase text-white mb-5 mt-2 md:text-40 xl:text-56 xl:leading-54;
+    @apply font-bellefair text-2xl leading-28 uppercase text-white mb-5 mt-2 md:text-40 xl:text-56 xl:leading-54;
 }
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
@@ -83,27 +103,47 @@ header nav .hr{
 }
 
 .home .containerHome{
-    @apply mx-auto flex flex-col items-center justify-center md:h-full md:flex-row md:justify-evenly w-customWidth;
+    @apply flex items-center w-customWidth mx-auto 
+    mt-28 md:mt-44 lg:mt-64;
+           
 }
 
 .home .containerHome .hero{
-    @apply text-center mt-28 md:mt-56 lg:mt-52 flex flex-col items-center justify-evenly lg:text-left lg:flex-row lg:mx-20;
+    @apply w-full text-center px-10 flex flex-col items-center
+           lg:text-left lg:flex-row lg:justify-between;
+}
+
+.home .containerHome .hero .heading-2,
+.home .containerHome .hero .heading-1,
+.home .containerHome .hero .text,
+.home .containerHome .btn{ 
+    @apply not-italic font-normal
 }
 
 .home .containerHome .hero .heading-2{
-    @apply font-barlowCondensed not-italic font-normal text-defaultSize leading-19 text-center tracking-two7 text-specialBlue uppercase md:text-2xl md:leading-6 md:tracking-three38 lg:text-left xl:text-heading5 xl:leading-34 xl:tracking-head5space;
+    @apply font-barlowCondensed text-defaultSize leading-19 text-center tracking-two7 text-specialBlue uppercase 
+           md:text-2xl md:leading-6 md:tracking-three38 
+           lg:text-left xl:text-heading5 xl:leading-34 xl:tracking-head5space;
 }   
 
 .home .containerHome .hero .heading-1{
-    @apply font-bellefair not-italic font-normal text-80 leading-100 uppercase text-center my-5 md:text-150 md:leading-150 lg:text-left xl:leading-172 ;
+    @apply font-bellefair text-80 leading-100 uppercase text-center my-5 
+           md:text-150 md:leading-150 
+           lg:text-left 
+           xl:text-150 xl:leading-172;
 }
 
 .home .containerHome .hero .text{
-    @apply font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto md:text-base md:w-7/12 md:leading-7 lg:text-justify lg:mx-0 xl:text-18 xl:leading-32 xl:w-3/5 ;
+    @apply font-barlow text-15 leading-25 text-center text-specialBlue mx-auto w-327
+    md:text-base md:w-444 md:leading-7 
+    lg:text-justify lg:mx-0
+    xl:text-18 xl:leading-32;
 } 
 
 .home .containerHome .btn{
-    @apply font-bellefair not-italic font-normal text-xl leading-23 tracking-One25 text-specialBlk bg-white w-150 h-150 uppercase rounded-full md:w-242 md:h-242 md:text-32 md:leading-37 md:tracking-2 lg:text-xl lg:w-212 lg:h-212 xl:w-274 xl:h-274;
+    @apply font-bellefair text-xl leading-23 tracking-One25 text-specialBlk bg-white w-150 h-150 uppercase rounded-full 
+    md:w-242 md:h-242 md:text-32 md:leading-37 md:tracking-2 
+    lg:text-xl lg:w-212 lg:h-212 xl:w-274 xl:h-274;
 }
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */

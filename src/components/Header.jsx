@@ -12,23 +12,23 @@ const Header = () => {
     
   return (
     <header>
-        <nav className='nav'>
-             {/* Desktop Menu */}
-            <Link to="/"><img src={logo} alt="" className='mt-1'/></Link>
+        <nav>
+             {/* Desktop Menu View */}
+            <Link to="/"><img src={logo} alt="Logo" className='img'/></Link>
             <hr className='hr'/>
-            <div className='hidden md:flex md:items-center h-96 bg-bgHeader backdrop-blur-lg p-14 lg:p-6 lg:w-1/2 absolute right-0'>
-                <ul className='ml-3 space-x-12 flex uppercase text-base font-thin'>
+            <div className='menu-desktop'>
+                <ul className='list-desktop'>
                    <Menu route={route} />
                 </ul>
             </div>
-            {/* Mobile Menu */}
-            <button onClick={()=>setOpen(!open)} className="btn-position">
+            {/* Mobile Menu View */}
+            <button onClick={()=>setOpen(!open)} className="desktop-btn-position">
               <img src={open ? iconClose : iconHamburger} alt="" />
             </button>
             {
                 open && (
                     <div className="menu-mobile">
-                        <button onClick={()=>setOpen(!open)} className="btn-position2">
+                        <button onClick={()=>setOpen(!open)} className="mobile-btn-position">
                             <img src={open ? iconClose : iconHamburger} alt="" />                           
                         </button> 
                         <ul className='menu-mobile-position'>
