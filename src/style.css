@@ -102,48 +102,42 @@ header nav .hr{
     @apply bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop overflow-hidden;
 }
 
-.home .containerHome{
-    @apply flex items-center w-customWidth mx-auto 
-    mt-28 md:mt-44 lg:mt-64;
-           
+.home .hero{
+    @apply w-full text-center px-20 flex flex-col items-center lg:px-40 lg:text-left lg:flex-row lg:justify-between;
 }
 
-.home .containerHome .hero{
-    @apply w-full text-center px-10 flex flex-col items-center
-           lg:text-left lg:flex-row lg:justify-between;
-}
-
-.home .containerHome .hero .heading-2,
-.home .containerHome .hero .heading-1,
-.home .containerHome .hero .text,
-.home .containerHome .btn{ 
+.home .hero .heading-2,
+.home .hero .heading-1,
+.home .hero .text,
+.home .btn{ 
     @apply not-italic font-normal
 }
 
-.home .containerHome .hero .heading-2{
+.home .hero .heading-2{
     @apply font-barlowCondensed text-defaultSize leading-19 text-center tracking-two7 text-specialBlue uppercase 
            md:text-2xl md:leading-6 md:tracking-three38 
            lg:text-left xl:text-heading5 xl:leading-34 xl:tracking-head5space;
 }   
 
-.home .containerHome .hero .heading-1{
+.home .hero .heading-1{
     @apply font-bellefair text-80 leading-100 uppercase text-center my-5 
            md:text-150 md:leading-150 
            lg:text-left 
            xl:text-150 xl:leading-172;
 }
 
-.home .containerHome .hero .text{
+.home .hero .text{
     @apply font-barlow text-15 leading-25 text-center text-specialBlue mx-auto w-327
     md:text-base md:w-444 md:leading-7 
     lg:text-justify lg:mx-0
     xl:text-18 xl:leading-32;
 } 
 
-.home .containerHome .btn{
+.home .btn{
     @apply font-bellefair text-xl leading-23 tracking-One25 text-specialBlk bg-white w-150 h-150 uppercase rounded-full 
     md:w-242 md:h-242 md:text-32 md:leading-37 md:tracking-2 
-    lg:text-xl lg:w-212 lg:h-212 xl:w-274 xl:h-274;
+    lg:text-32 lg:w-212 lg:h-212 
+    xl:w-274 xl:h-274;
 }
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
