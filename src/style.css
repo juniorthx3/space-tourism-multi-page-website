@@ -20,7 +20,8 @@ header nav{
 }
 
 header nav .menu-desktop{
-    @apply hidden md:flex md:items-center bg-bgHeader backdrop-blur-lg h-full md:p-6 lg:w-830 absolute right-0;
+    @apply hidden md:flex md:items-center bg-bgHeader backdrop-blur-lg h-full absolute right-0 
+    md:p-6 lg:w-690 xl:w-830 ;
 }
 
 header nav .menu-desktop .list-desktop{
@@ -103,7 +104,8 @@ header nav .hr{
 }
 
 .home .hero{
-    @apply w-full text-center px-20 flex flex-col items-center lg:px-40 lg:text-left lg:flex-row lg:justify-between;
+    @apply w-full text-center px-20 flex flex-col items-center
+    lg:px-28 lg:text-left lg:flex-row lg:justify-between xl:px-40;
 }
 
 .home .hero .heading-2,
@@ -116,14 +118,13 @@ header nav .hr{
 .home .hero .heading-2{
     @apply font-barlowCondensed text-defaultSize leading-19 text-center tracking-two7 text-specialBlue uppercase 
            md:text-2xl md:leading-6 md:tracking-three38 
-           lg:text-left xl:text-heading5 xl:leading-34 xl:tracking-head5space;
+           lg:text-xl lg:leading-29 lg:text-left lg:tracking-four5
+           xl:text-2xl xl:text-heading5 xl:leading-34 xl:tracking-head5space;
 }   
 
 .home .hero .heading-1{
     @apply font-bellefair text-80 leading-100 uppercase text-center my-5 
-           md:text-150 md:leading-150 
-           lg:text-left 
-           xl:text-150 xl:leading-172;
+           md:text-150 md:leading-150 lg:text-left xl:leading-172;
 }
 
 .home .hero .text{
@@ -136,8 +137,8 @@ header nav .hr{
 .home .btn{
     @apply font-bellefair text-xl leading-23 tracking-One25 text-specialBlk bg-white w-150 h-150 uppercase rounded-full 
     md:w-242 md:h-242 md:text-32 md:leading-37 md:tracking-2 
-    lg:text-32 lg:w-212 lg:h-212 
-    xl:w-274 xl:h-274;
+    lg:text-2xl lg:h-200 lg:w-200
+    xl:text-32 xl:w-274 xl:h-274;
 }
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
