@@ -149,31 +149,53 @@ header nav .hr{
 }
 
 .destination .img{
-    @apply w-170 md:w-300 lg:w-445 mx-auto;
+    @apply w-170 md:w-300 lg:w-360 xl:w-445 mx-auto;
 }
 
 .destination .infoBox{
     @apply text-center pb-10 md:m-8 lg:m-0 lg:text-left lg:pb-0;
 }
 
+.destination .infoBox .subMenu{
+    @apply font-barlowCondensed font-normal text-sm leading-4 tracking-two3 text-specialBlue uppercase pb-2 
+           hover:border-b-2 hover:border-solid hover:border-gray-400 focus:text-white 
+           md:text-base md:leading-19 md:tracking-two7;
+}
+
+.destination .title,
+.destination .description,
+.destination .stats-design,
+.destination .stats-results{
+  @apply not-italic font-normal;
+}
+
 .destination .title{
-    @apply font-bellefair not-italic font-normal text-56 leading-64 md:text-80 md:leading-92 uppercase md:mb-2 lg:text-100 lg:leading-115;
+    @apply font-bellefair text-56 leading-64 
+    md:text-80 md:leading-92 uppercase md:mb-2
+    xl:text-100 xl:leading-115;
 }
 
 .destination .description{
-    @apply w-80 font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto border-b border-borderBlk pb-8 md:text-base md:w-573 md:leading-7 md:pb-14 lg:text-18 lg:w-444 lg:pb-10 lg:mx-0 lg:leading-32 lg:text-justify;
+    @apply w-80 font-barlow text-15 leading-25 text-center text-specialBlue mx-auto border-b border-borderBlk pb-8 
+    md:text-base md:w-573 md:leading-7 md:pb-14 
+    lg:w-400 lg:mx-0 lg:text-justify lg:pb-7
+    xl:w-444 xl:leading-32 xl:text-18 xl:pb-10;
 }
 
 .destination .stats-container{
-    @apply grid grid-cols-1 pt-8 lg:pt-6 md:mx-auto md:grid-cols-2 md:w-2/3 lg:gap-4 lg:mx-0;
+    @apply grid grid-cols-1 pt-8 lg:pt-6 
+           md:mx-auto md:grid-cols-2 md:w-2/3 
+           lg:gap-4 lg:mx-0;
 }
 
 .destination .stats-design{
-    @apply font-barlowCondensed not-italic font-normal text-sm leading-17 tracking-two3 uppercase text-specialBlue pb-5 md:pb-8;
+    @apply font-barlowCondensed text-sm leading-17 tracking-two3 uppercase text-specialBlue pb-5 
+    md:pb-0 xl:pb-8;
 }
 
 .destination .stats-results{
-    @apply block font-bellefair not-italic font-normal text-heading5 leading-8 text-white mt-2 md:leading-32 md:mt-3 lg:mt-2;
+    @apply block font-bellefair text-heading5 leading-8 text-white mt-2 
+    md:leading-32 md:mt-3 lg:mt-2 lg:text-20;
 }
 
 /* CREW COMPONENT STYLES (CREW.JSX) */
