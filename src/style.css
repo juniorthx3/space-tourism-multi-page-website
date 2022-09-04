@@ -75,10 +75,6 @@ header nav .hr{
     @apply md:h-auto;
 }
 
-.h2, .heading-4{
-    @apply not-italic font-normal
-}
-
 .h2{
     @apply font-barlowCondensed text-defaultSize leading-19 tracking-two7 uppercase pb-5 text-center 
            md:text-left md:leading-10 md:text-2xl 
@@ -90,11 +86,14 @@ header nav .hr{
 }
 
 .containerBox{
-    @apply grid grid-cols-1 gap-3 lg:grid-cols-2 content-center
+    @apply grid grid-cols-1 gap-3 content-center lg:grid-cols-2 lg:gap-10;
 }
 
 .heading-4{
-    @apply font-bellefair text-2xl leading-28 uppercase text-white mb-5 mt-2 md:text-40 xl:text-56 xl:leading-54;
+    @apply font-bellefair text-2xl leading-28 uppercase text-white mb-5 mt-2 
+    md:text-center md:text-40 
+    lg:w-456 xl:w-690 lg:text-left
+    xl:text-56 xl:leading-54;
 }
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
@@ -105,14 +104,7 @@ header nav .hr{
 
 .home .hero{
     @apply w-full text-center px-20 flex flex-col items-center
-    lg:px-28 lg:text-left lg:flex-row lg:justify-between xl:px-40;
-}
-
-.home .hero .heading-2,
-.home .hero .heading-1,
-.home .hero .text,
-.home .btn{ 
-    @apply not-italic font-normal
+    lg:px-36 lg:text-left lg:flex-row lg:justify-between xl:px-40;
 }
 
 .home .hero .heading-2{
@@ -162,12 +154,6 @@ header nav .hr{
            md:text-base md:leading-19 md:tracking-two7;
 }
 
-.destination .title,
-.destination .description,
-.destination .stats-design,
-.destination .stats-results{
-  @apply not-italic font-normal;
-}
 
 .destination .title{
     @apply font-bellefair text-56 leading-64 
@@ -212,33 +198,29 @@ header nav .hr{
     @apply flex items-center justify-center md:justify-start md:mb-10;
 }
 
-.crew .desk-content,
-.crew .desk-content .heading-3,
-.crew .text{
-    @apply not-italic font-normal
-}
 .crew .desk-content{
-    @apply text-center lg:text-left font-bellefair md:mx-38 lg:mx-32;
+    @apply text-center lg:text-left font-bellefair md:mx-38 lg:mx-32 xl:mx-0;
 }
 
 .crew .desk-content .heading-3{
     @apply font-bellefair text-15 leading-18 uppercase text-white mix-blend-normal opacity-50 mt-2 
            md:text-defaultSize md:leading-28 
-           xl:text-32 xl:leading-37
+           lg:text-18 lg:leading-18
+           xl:text-32 xl:leading-37;
 }
 
 .crew .text{
-    @apply w-458 font-barlow text-15 leading-25 text-center text-specialBlue mx-auto 
-           md:text-defaultSize md:leading-28 md:mb-0 
-           lg:text-left 
-           xl:text-18 xl:mx-0 xl:mb-10 xl:w-444 xl:leading-32
+    @apply font-barlow text-15 leading-25 text-center text-specialBlue mx-8
+           md:w-458 md:text-defaultSize md:leading-28 md:mb-0 md:mx-auto
+           lg:w-auto lg:text-left
+           xl:text-18 xl:mx-0 xl:mb-10 xl:w-444 xl:leading-32;  
 }
 
 .crew .img{
     @apply hidden md:block 
            md:w-456 md:mx-auto md:bottom-0 
            lg:absolute lg:h-470 lg:w-fit
-           lg:left-1/2 xl:h-712;
+           lg:ml-14 lg:left-1/2 xl:h-712;
 }
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
@@ -248,31 +230,38 @@ header nav .hr{
 }
 
 .technology .text1{
-    @apply w-2/3 md:w-7/12 mx-auto font-barlow not-italic font-normal text-sm leading-6 text-specialBlue md:mx-0 md:mb-0
+    @apply w-327 mx-auto font-barlow text-15 leading-25 text-specialBlue 
+           md:w-458 md:text-defaultSize md:text-center md:mx-0 md:mb-0 lg:text-left
+           xl:w-444 xl:text-18 xl:leading-32
 }
 
 .technology .techBox{
-    @apply flex flex-col-reverse justify-center items-center lg:flex-row lg:px-32;
+    @apply flex flex-col-reverse justify-center items-center 
+           mt-16 lg:flex-row lg:px-32;
 }
 
 .technology .btnInfo{
-    @apply text-center md:text-left font-bellefair not-italic font-normal md:flex;
+    @apply text-center md:text-left font-bellefair lg:flex;
 }
 
 .technology .boxBtn{
-    @apply flex justify-center items-center md:flex-col py-5 md:py-0 md:space-y-8
+    @apply flex justify-center items-center py-5  
+    lg:py-0 lg:space-y-8 lg:flex-col
 }
 
 .technology .list{
-    @apply font-bellefair font-normal text-white mr-4 md:mr-14 text-xl;
+    @apply font-bellefair text-white mr-4 text-xl mt-0 md:mt-7 md:mr-5 lg:mr-14;
 }
 
 .technology .btnDesign{
-    @apply pt-1 h-12 w-12  border border-white border-opacity-25 rounded-full;
+    @apply pt-1 h-10 w-10  border border-white border-opacity-25 rounded-full
+           md:text-2xl md:h-60 md:w-60
+           xl:h-20 xl:w-20 xl:text-32;
 }
 
 .technology .heading-5{
-    @apply text-lg md:text-lg font-barlowCondensed text-specialBlue uppercase mix-blend-normal opacity-50
+    @apply font-barlowCondensed text-specialBlue text-sm leading-4 tracking-two3 uppercase mix-blend-normal opacity-50 mb-0 mt-0 text-center 
+           md:text-base md:mt-5 md:mb-5 lg:text-left xl:text-base
 }
 
 

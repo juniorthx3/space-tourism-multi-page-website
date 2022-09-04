@@ -9,7 +9,7 @@ const Crew = () => {
 
   return (
     <section className="crewBackground crew">
-      <div className='mt-88 md:mt-136 lg:mt-150'>
+      <div className='mt-88 md:mt-136 lg:mt-158 xl:mt-180'>
                <h2 className="h2 mb-3 md:mb-0 md:mx-38 lg:mb-0 lg:mx-32"><span className="span">02</span>Meet your crew</h2>
                 <div className='containerBox md:mt-8 lg:mt-12 xl:mt-36 xl:mx-32'>
                     {/* Mobile Design */}
@@ -38,7 +38,7 @@ const Crew = () => {
                         <h2 className="heading-4">{name}</h2>
                         <p className='text'>{bio}</p>
                         {/* PC Design */}
-                        <div className='hidden md:block md:mt-10 lg:mt-14'>
+                        <div className='hidden md:block md:mt-10 lg:mt-20'>
                                 <ul className="flex items-center justify-center lg:justify-start mb-10">
                                     {records.map((menu, indicator) => (
                                       <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">

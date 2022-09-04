@@ -9,7 +9,7 @@ const Technology = () => {
   return (
     <section className="technologyBackground technology">
       <div className='mt-28 md:mt-36'>
-        <h2 className="h2 mb-3 md:mb-0 md:mx-32"><span className="span">03</span>Space Launch 101</h2>
+        <h2 className="h2 mb-3 md:mb-6 md:mx-38 lg:mb-0 lg:mx-32"><span className="span">03</span>Space Launch 101</h2>
         <div className='techBox'>
           <div className='btnInfo'>
                   <ul className="boxBtn">
@@ -27,8 +27,8 @@ const Technology = () => {
                       <p className='text1'>{description}</p>
                   </div>
           </div> 
-            <img src={images.landscape} alt={name} title={name} className="mx-auto md:hidden" />
-            <img src={images.portrait} alt={name} title={name} className="hidden lg:block mx-auto w-1/3" />
+            <img src={images.landscape} alt={name} title={name} className="mx-auto lg:hidden" />
+            <img src={images.portrait} alt={name} title={name} className="hidden xl:block mx-auto w-1/3" />
         </div>
       </div>
     </section>
