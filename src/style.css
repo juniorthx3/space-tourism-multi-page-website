@@ -212,20 +212,33 @@ header nav .hr{
     @apply flex items-center justify-center md:justify-start md:mb-10;
 }
 
+.crew .desk-content,
+.crew .desk-content .heading-3,
+.crew .text{
+    @apply not-italic font-normal
+}
 .crew .desk-content{
-    @apply text-center lg:text-left font-bellefair not-italic font-normal;
+    @apply text-center lg:text-left font-bellefair md:mx-38 lg:mx-32;
 }
 
 .crew .desk-content .heading-3{
-    @apply font-bellefair not-italic font-normal text-15 leading-18 uppercase text-white mix-blend-normal opacity-50 mt-2 md:text-defaultSize md:leading-28 xl:text-32 xl:leading-37
+    @apply font-bellefair text-15 leading-18 uppercase text-white mix-blend-normal opacity-50 mt-2 
+           md:text-defaultSize md:leading-28 
+           xl:text-32 xl:leading-37
 }
 
 .crew .text{
-    @apply w-458 font-barlow not-italic font-normal text-15 leading-25 text-center text-specialBlue mx-auto md:text-defaultSize md:leading-28 md:mb-0 xl:text-left xl:text-18 xl:mx-0 xl:mb-10 xl:w-444 xl:leading-32
+    @apply w-458 font-barlow text-15 leading-25 text-center text-specialBlue mx-auto 
+           md:text-defaultSize md:leading-28 md:mb-0 
+           lg:text-left 
+           xl:text-18 xl:mx-0 xl:mb-10 xl:w-444 xl:leading-32
 }
 
 .crew .img{
-    @apply hidden md:block md:w-456 lg:absolute md:mx-auto md:bottom-0 xl:left-1/2 xl:w-568 xl:h-712;
+    @apply hidden md:block 
+           md:w-456 md:mx-auto md:bottom-0 
+           lg:absolute lg:h-470 lg:w-fit
+           lg:left-1/2 xl:h-712;
 }
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */

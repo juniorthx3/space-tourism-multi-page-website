@@ -86,7 +86,8 @@ module.exports = {
         200:"200px",
         274:"274px",
         712:"712px",
-        444:"444px"
+        444:"444px",
+        470:"470px"
       },
       letterSpacing:{
         One25:"1.25px",
