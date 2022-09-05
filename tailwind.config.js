@@ -10,17 +10,18 @@ module.exports = {
       'barlow':'Barlow'
     },
     screens:{
-      xs: '375px',
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px'
+      'xs': '375px',
+      'sm': '480px',
+      'md': '768px',
+      'lg': '976px',
+      'xl': '1440px',
+      '2xl':'1600px'
     },
     extend: {
       colors:{
-        specialBlue:"#D0D6F9",
-        specialBlk:"#0B0D17",
-        borderBlk:"#383B4B"
+        'specialBlue':"#D0D6F9",
+        'specialBlk':"#0B0D17",
+        'borderBlk':"#383B4B"
       },
       fontSize:{
         defaultSize:"16px",
@@ -135,8 +136,9 @@ module.exports = {
         190:"190px",
         200:"200px",
         220:"240px",
+        230:"300px",
         300:"300px",
-        387:"387px"
+        387:"387px",
       }
     },
   },

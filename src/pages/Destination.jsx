@@ -8,8 +8,8 @@ const Destination = () => {
 
   return (
     <section className="destinationBackground destination">
-       <div className='mt-88 md:mt-136 lg:mt-158 xl:mt-180'>
-            <h2 className="h2 mb-3 md:mb-0 md:mx-38 lg:mb-0 lg:mx-32"><span className="span">01</span>Pick your destination</h2>
+       <div className='position-start-page'>
+            <h2 className="h2"><span className="span">01</span>Pick your destination</h2>
             <div className='containerBox md:mt-8 xl:mt-20'>
                 <img src={images.png} alt={name} title={name} className="img" />
                 <div className='infoBox'>  

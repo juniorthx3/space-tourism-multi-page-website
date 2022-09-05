@@ -68,17 +68,17 @@ header nav .hr{
 /* GLOBAL */
 /* BACKGROUND PROPERTIES */
 .home, .destination, .crew, .technology{
-    @apply min-h-screen bg-cover absolute top-0 right-0 left-0 -z-10 text-white lg:h-full;
+    @apply w-full min-h-screen bg-cover absolute top-0 right-0 left-0 -z-10 text-white;
 }
 
-.destination{
+.home, .destination, .crew{
     @apply md:h-auto;
 }
 
 .h2{
-    @apply font-barlowCondensed text-defaultSize leading-19 tracking-two7 uppercase pb-5 text-center 
-           md:text-left md:leading-10 md:text-2xl 
-           lg:text-heading5 lg:leading-34 lg:tracking-head5space;
+    @apply font-barlowCondensed text-defaultSize leading-19 tracking-two7 uppercase pb-5 text-center mb-3
+           md:text-left md:leading-10 md:text-2xl md:mb-0 md:mx-38
+           lg:text-heading5 lg:leading-34 lg:tracking-head5space lg:mb-0 lg:mx-32;
 }
 
 .span{
@@ -96,10 +96,19 @@ header nav .hr{
     xl:text-56 xl:leading-54;
 }
 
+.position-start-page{
+    @apply mt-88 md:mt-136 lg:mt-158;
+}
+
 /* HOME COMPONENT STYLES (HOME.JSX) */
 .homeBackground{
     /*Add background for homepage*/
-    @apply bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop overflow-hidden;
+    @apply bg-homeMobile md:bg-homeTablet lg:bg-homeDesktop;
+}
+
+.home .start-page-home{
+    @apply mt-88 md:mt-200 lg:mt-230;
+    /* lg:mt-220 xl:mt-387 2xl:mt-300 */
 }
 
 .home .hero{

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 const Home = () => {
   return (
     <section className="homeBackground home">
-      <div className='mt-88 md:mt-200 lg:mt-220 xl:mt-300'>
+      <div className='start-page-home'>
               <div className="hero">
                   <div className='text-center md:text-left'>
                       <h5 className='heading-2'>So, you want to travel to</h5>
