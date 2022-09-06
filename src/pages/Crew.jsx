@@ -38,7 +38,7 @@ const Crew = () => {
                         <h2 className="heading-4">{name}</h2>
                         <p className='text'>{bio}</p>
                         {/* PC Design */}
-                        <div className='hidden md:block md:mt-10 lg:mt-20'>
+                        <div className='hidden md:block md:mt-10 lg:mt-14'>
                                 <ul className="flex items-center justify-center lg:justify-start mb-10">
                                     {records.map((menu, indicator) => (
                                       <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">

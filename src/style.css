@@ -97,7 +97,7 @@ header nav .hr{
 }
 
 .position-start-page{
-    @apply mt-88 md:mt-136 lg:mt-158;
+    @apply mt-88 md:mt-136 lg:mt-158 2xl:mt-150;
 }
 
 /* HOME COMPONENT STYLES (HOME.JSX) */
@@ -229,7 +229,8 @@ header nav .hr{
     @apply hidden md:block 
            md:w-456 md:mx-auto md:bottom-0 
            lg:absolute lg:h-470 lg:w-fit
-           lg:ml-14 lg:left-1/2 xl:h-712;
+           lg:ml-14 lg:left-1/2 
+           xl:h-600 2xl:h-600;
 }
 
 /* TECHNOLOGY COMPONENT STYLE (CREW.JSX) */
@@ -238,15 +239,9 @@ header nav .hr{
     @apply bg-technologyMobile md:bg-technologyTablet lg:bg-technologyDesktop;
 }
 
-.technology .text1{
-    @apply w-327 mx-auto font-barlow text-15 leading-25 text-specialBlue 
-           md:w-458 md:text-defaultSize md:text-center md:mx-0 md:mb-0 lg:text-left
-           xl:w-444 xl:text-18 xl:leading-32
-}
-
 .technology .techBox{
     @apply flex flex-col-reverse justify-center items-center 
-           mt-16 lg:flex-row lg:px-32;
+           mt-16 lg:flex-row lg:px-32 2xl:mt-0;
 }
 
 .technology .btnInfo{
@@ -255,23 +250,34 @@ header nav .hr{
 
 .technology .boxBtn{
     @apply flex justify-center items-center py-5  
-    lg:py-0 lg:space-y-8 lg:flex-col
+           lg:py-0 lg:space-y-8 lg:flex-col;
 }
 
 .technology .list{
-    @apply font-bellefair text-white mr-4 text-xl mt-0 md:mt-7 md:mr-5 lg:mr-14;
+    @apply font-bellefair text-white mr-4 text-xl mt-0 md:mt-7 xl:mt-0 md:mr-5 lg:mr-14;
 }
 
 .technology .btnDesign{
     @apply pt-1 h-10 w-10  border border-white border-opacity-25 rounded-full
            md:text-2xl md:h-60 md:w-60
-           xl:h-20 xl:w-20 xl:text-32;
+           xl:h-20 xl:w-20 xl:text-32
+           2xl:h-16 2xl:w-16
 }
 
 .technology .heading-5{
-    @apply font-barlowCondensed text-specialBlue text-sm leading-4 tracking-two3 uppercase mix-blend-normal opacity-50 mb-0 mt-0 text-center 
-           md:text-base md:mt-5 md:mb-5 lg:text-left xl:text-base
+    @apply font-barlowCondensed text-specialBlue text-sm leading-4 tracking-two3 uppercase mix-blend-normal 
+           opacity-50 mb-0 mt-0 text-center 
+           md:text-base md:mt-5 md:mb-5 
+           lg:text-left xl:text-base
 }
+
+.technology .text1{
+    @apply w-327 mx-auto font-barlow text-15 leading-25 text-specialBlue 
+           md:w-458 md:text-defaultSize md:text-center md:mx-0 md:mb-0 
+           lg:text-left
+           xl:w-444 xl:text-18 xl:leading-32
+}
+
 
 
 
