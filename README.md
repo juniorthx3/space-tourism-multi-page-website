@@ -27,9 +27,9 @@ Users should be able to:
 
 #### Desktop View 
 ![Desktop View](./screenshot-desktop-view.png)
-![Desktop View1](./screenshot-desktop-view1.png)
-![Desktop View2](./screenshot-desktop-view2.png)
-![Desktop View3](./screenshot-desktop-view3.png)
+![Desktop View1](./screenshot-desktop-vieww.png)
+![Desktop View2](./screenshot-desktop-viewww.png)
+![Desktop View3](./screenshot-desktop-viewwww.png)
 
 #### Mobile View 
 ![Mobile View](./screenshot-mobile-view.png)
