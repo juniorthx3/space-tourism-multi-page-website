@@ -27,9 +27,13 @@ Users should be able to:
 
 #### Desktop View 
 ![Desktop View](screenshot-desktop-view.png)
+![Desktop View](screenshot-desktop-view1.png)
+![Desktop View](screenshot-desktop-view2.png)
+![Desktop View](screenshot-desktop-view3.png)
 
 #### Mobile View 
 ![Mobile View](screenshot-mobile-view.png)
+![Mobile View](screenshot-mobile-view1.png)
 
 ### Links
 
