@@ -28,7 +28,7 @@ const Technology = () => {
                   </div>
           </div> 
             <img src={images.landscape} alt={name} title={name} className="mx-auto lg:hidden w-full" />
-            <img src={images.portrait} alt={name} title={name} className="hidden lg:block mx-auto w-1/2" />
+            <img src={images.portrait} alt={name} title={name} className="hidden lg:block mx-auto lg:w-1/3 xl:w-2/3" />
         </div>
       </div>
     </section>

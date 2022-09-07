@@ -11,7 +11,7 @@ const Crew = () => {
     <section className="crewBackground crew">
       <div className='position-start-page'>
                <h2 className="h2"><span className="span">02</span>Meet your crew</h2>
-                <div className='containerBox md:mt-8 lg:mt-12 xl:mt-36 xl:mx-32'>
+                <div className='containerBox md:mt-8 lg:mt-12 xl:mt-48 xl:mx-32'>
                     {/* Mobile Design */}
                     <div className='block md:hidden'>
                       {/* Images of Crew in mobile size */}
@@ -38,7 +38,7 @@ const Crew = () => {
                         <h2 className="heading-4">{name}</h2>
                         <p className='text'>{bio}</p>
                         {/* PC Design */}
-                        <div className='hidden md:block md:mt-10 lg:mt-14'>
+                        <div className='hidden md:block md:mt-10 lg:mt-20'>
                                 <ul className="flex items-center justify-center lg:justify-start mb-10">
                                     {records.map((menu, indicator) => (
                                       <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">
