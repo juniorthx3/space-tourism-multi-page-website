@@ -42,7 +42,7 @@ header nav .hr{
 }
 
 .mobile-btn-position{
-    @apply top-14;
+    @apply top-9;
 }
 
 .menu-mobile{
@@ -50,7 +50,7 @@ header nav .hr{
 }
 
 .menu-mobile-position{
-    @apply uppercase text-sm absolute top-28 space-y-10 ml-6;
+    @apply font-barlow uppercase text-defaultSize tracking-two7 leading-19 absolute top-24 space-y-10 ml-6;
 }
 
 /* MENU LINKS DESIGN (NAVLINK.JSX) */
@@ -140,6 +140,7 @@ header nav .hr{
     lg:text-2xl lg:h-200 lg:w-200
     xl:text-32 xl:w-274 xl:h-274;
 }
+
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
 
@@ -260,6 +261,7 @@ header nav .hr{
 
 .technology .btnDesign{
     @apply pt-1 h-10 w-10  border border-white border-opacity-25 rounded-full
+           hover:border-white
            md:text-2xl md:h-60 md:w-60
            lg:h-14 lg:w-14
            xl:h-20 xl:w-20 xl:text-32

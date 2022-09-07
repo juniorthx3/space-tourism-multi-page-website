@@ -23,8 +23,8 @@ const Crew = () => {
                       <div className='nav-mobile'>
                             <ul className="list">
                                 {records.map((menu, indicator) => (
-                                      <li key={indicator} className="mr-4 md:mr-5 text-gray-500 cursor-pointer">
-                                        <button onClick={() => setIndex(indicator)} className={`${indicator === index && "border-white text-white"}`}>
+                                      <li key={indicator} className="mr-4 md:mr-5 text-gray-800 cursor-pointer">
+                                        <button onClick={() => setIndex(indicator)} className={`hover:text-gray-500 ${indicator === index && "border-white text-white"}`}>
                                           <FaCircle size={10}/>
                                         </button>
                                       </li>
@@ -41,8 +41,8 @@ const Crew = () => {
                         <div className='hidden md:block md:mt-10 lg:mt-20'>
                                 <ul className="flex items-center justify-center lg:justify-start mb-10">
                                     {records.map((menu, indicator) => (
-                                      <li key={indicator} className="mr-7 md:mr-5 text-gray-500 cursor-pointer">
-                                        <button onClick={() => setIndex(indicator)} className={`${indicator === index && "border-white text-white"}`}>
+                                      <li key={indicator} className="mr-7 md:mr-5 text-gray-800 cursor-pointer">
+                                        <button onClick={() => setIndex(indicator)} className={`hover:text-gray-500 ${indicator === index && "border-white text-white"}`}>
                                           <FaCircle size={11}/>
                                         </button>
                                       </li>
