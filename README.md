@@ -26,14 +26,14 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop View 
-![Desktop View](screenshot-desktop-view.png)
-![Desktop View](screenshot-desktop-view1.png)
-![Desktop View](screenshot-desktop-view2.png)
-![Desktop View](screenshot-desktop-view3.png)
+![Desktop View](./screenshot-desktop-view.png)
+![Desktop View1](./screenshot-desktop-view1.PNG)
+![Desktop View2](./screenshot-desktop-view2.png)
+![Desktop View3](./screenshot-desktop-view3.png)
 
 #### Mobile View 
-![Mobile View](screenshot-mobile-view.png)
-![Mobile View](screenshot-mobile-view1.png)
+![Mobile View](./screenshot-mobile-view.png)
+![Mobile View1](./screenshot-mobile-view1.png)
 
 ### Links
 
