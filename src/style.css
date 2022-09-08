@@ -135,12 +135,20 @@ header nav .hr{
 } 
 
 .home .btn{
-    @apply font-bellefair text-xl leading-23 tracking-One25 text-specialBlk bg-white w-150 h-150 uppercase rounded-full 
-    md:w-242 md:h-242 md:text-32 md:leading-37 md:tracking-2 
-    lg:text-2xl lg:h-200 lg:w-200
-    xl:text-32 xl:w-274 xl:h-274;
+    @apply font-bellefair text-xl leading-23 tracking-One25 text-specialBlk 
+           grid bg-white w-150 h-150 duration-300 uppercase rounded-full 
+           aspect-square place-items-center content-none
+           md:w-242 md:h-242 md:text-32 md:leading-37 md:tracking-2 
+           lg:text-2xl lg:h-200 lg:w-200
+           xl:text-32 xl:w-274 xl:h-274
+           after:absolute
+           after:w-150 after:h-150
+           md:after:w-242 md:after:h-242
+           lg:after:w-200 lg:after:h-200
+           xl:after:w-274 xl:after:h-274
+           after:bg-white/25 after:rounded-full 
+           hover:after:scale-150 focus:after:scale-150 ease-out;
 }
-
 
 /* DESTINATION COMPONENT (DESTINATION.JSX) */
 
